@@ -89,10 +89,13 @@ private Trie createExampleTrie() {
 </rich_text>
     </node>
   </node>
-  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607322192">
+  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607324657">
     <rich_text>- Trie Algorithm
 - ArrayList to integer Array
 - bit shift, xor, &gt;&gt;&gt;
-- multi dimensional ArrayList</rich_text>
+- multi dimensional ArrayList
+- computIfAbsent
+- compare function
+- generics</rich_text>
   </node>
 </cherrytree>
