@@ -89,13 +89,43 @@ private Trie createExampleTrie() {
 </rich_text>
     </node>
   </node>
-  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607324657">
+  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607326198">
     <rich_text>- Trie Algorithm
 - ArrayList to integer Array
 - bit shift, xor, &gt;&gt;&gt;
 - multi dimensional ArrayList
 - computIfAbsent
 - compare function
-- generics</rich_text>
+- generics
+- 
+</rich_text>
+    <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
+    <rich_text>
+
+greenshot for print screen or image editing
+keepnote or cherrytree in linux
+</rich_text>
+  </node>
+  <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1607326453">
+    <node name="Pentesting" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326258" ts_lastsave="1607326260">
+      <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
+      <rich_text>
+
+greenshot for print screen or image editing
+keepnote or cherrytree in linux
+</rich_text>
+    </node>
+    <node name="Open Banking, PSD2 and GDPR. FinTech" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326367" ts_lastsave="1607326385">
+      <rich_text link="webs https://www.udemy.com/course/a-course-on-api-and-open-banking-gdpr-by-piyush-singh/">https://www.udemy.com/course/a-course-on-api-and-open-banking-gdpr-by-piyush-singh/</rich_text>
+      <rich_text>
+
+</rich_text>
+    </node>
+    <node name="Java Multithreading, Concurrency &amp; Performance Optimization" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326453" ts_lastsave="1607326577">
+      <rich_text link="webs https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/">https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/</rich_text>
+    </node>
+    <node name="The Definitive Guide to Web Project Requirements Gathering" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326554" ts_lastsave="1607326560">
+      <rich_text link="webs https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/">https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/</rich_text>
+    </node>
   </node>
 </cherrytree>
