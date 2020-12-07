@@ -12,7 +12,7 @@ int r = rand.nextInt(arr.size());</rich_text>
     </node>
   </node>
   <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607320986">
-    <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321517">
+    <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321474">
       <rich_text>public class TrieNode {
 	private HashMap&lt;Character, TrieNode&gt; children;
 	private String content;
@@ -44,17 +44,17 @@ public class Trie {
 		return current.isEndOfWord();
 	}
 
-	public void delete(String word) {
-		delete(root, word, 0);
-	}
+public void delete(String word) {
+	delete(root, word, 0);
+}
 
-	private boolean delete(TrieNode current, String word, int index) {
+private boolean delete(TrieNode current, String word, int index) {
 		if (index == word.length()) {
-			if (!current.isEndOfWord()) {
-				return false;
-			}
-			current.setEndOfWord(false);
-			return current.getChildren().isEmpty();
+		    if (!current.isEndOfWord()) {
+		        return false;
+		    }
+		    current.setEndOfWord(false);
+		    return current.getChildren().isEmpty();
 		}
 		char ch = word.charAt(index);
 		TrieNode node = current.getChildren().get(ch);
@@ -74,14 +74,14 @@ public class Trie {
 
 // Usage
 private Trie createExampleTrie() {
-	Trie trie = new Trie();
+    Trie trie = new Trie();
 
-	trie.insert("Programming");
-	trie.insert("is");
-	trie.insert("a");
-	trie.insert("way");
-	trie.insert("of");
-	trie.insert("life");
+    trie.insert("Programming");
+    trie.insert("is");
+    trie.insert("a");
+    trie.insert("way");
+    trie.insert("of");
+    trie.insert("life");
 
     return trie;
 }
