@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Java" unique_id="1" prog_lang="sh" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1607318357">
+    <rich_text>
+</rich_text>
+    <node name="Random" unique_id="2" prog_lang="sh" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315461" ts_lastsave="1607315470">
+      <rich_text>import java.util.Random;
+
+Random rand;
+int r = rand.nextInt(arr.size());</rich_text>
+    </node>
+  </node>
+  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607317598">
+    <rich_text>- Trie Algorithm
+- ArrayList to integer Array</rich_text>
+  </node>
+</cherrytree>
