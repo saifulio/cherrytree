@@ -1,17 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Java" unique_id="1" prog_lang="sh" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1607318357">
+  <node name="Java" unique_id="1" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1607318357">
     <rich_text>
 </rich_text>
-    <node name="Random" unique_id="2" prog_lang="sh" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315461" ts_lastsave="1607315470">
+    <node name="Random" unique_id="2" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315461" ts_lastsave="1607315470">
       <rich_text>import java.util.Random;
 
 Random rand;
 int r = rand.nextInt(arr.size());</rich_text>
     </node>
+    <node name="Comparator" unique_id="13" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607435817" ts_lastsave="1607435854">
+      <rich_text>// https://howtodoinjava.com/java8/comparator-example-lambda/
+
+public class Main {
+
+    public static void main(String[] args) {
+        List&lt;Employee&gt; employees = getEmployees();
+
+       Comparator&lt;Employee&gt; comp = Comparator.comparing(e-&gt; e.firstName);
+       employees.sort(comp.reversed());
+
+        System.out.println(employees);
+    }
+
+    private static List&lt;Employee&gt; getEmployees(){
+        List&lt;Employee&gt; employees  = new ArrayList&lt;&gt;();
+        employees.add(new Employee(6,"Yash", "Chopra", 25));
+        employees.add(new Employee(2,"Aman", "Sharma", 28));
+        employees.add(new Employee(3,"Aakash", "Yaadav", 52));
+        employees.add(new Employee(5,"David", "Kameron", 19));
+        employees.add(new Employee(4,"James", "Hedge", 72));
+        employees.add(new Employee(8,"Balaji", "Subbu", 88));
+        employees.add(new Employee(7,"Karan", "Johar", 59));
+        employees.add(new Employee(1,"Lokesh", "Gupta", 32));
+        employees.add(new Employee(9,"Vishu", "Bissi", 33));
+        employees.add(new Employee(10,"Lokesh", "Ramachandran", 60));
+        return employees;
+    }
+
+}
+
+class Employee {
+    public Integer id;
+    public String firstName;
+    public String lastName;
+    public Integer age;
+
+    public Employee(Integer id, String firstName, String lastName, Integer age){
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    //Other getter and setter methods
+
+    @Override
+    public String toString() {
+        return "\n["+this.id+","+this.firstName+","+this.lastName+","+this.age+"]";
+    }
+}</rich_text>
+    </node>
   </node>
-  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607320986">
+  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607387461">
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
       <rich_text>public class TrieNode {
 	private HashMap&lt;Character, TrieNode&gt; children;
@@ -88,8 +140,109 @@ private Trie createExampleTrie() {
 
 </rich_text>
     </node>
+    <node name="Union FInd" unique_id="12" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607387461" ts_lastsave="1607387462">
+      <rich_text>// Java Program for union-find algorithm to detect cycle in a graph
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Graph
+{
+	int V, E; // V-&gt; no. of vertices &amp; E-&gt;no.of edges
+	Edge edge[]; // /collection of all edges
+
+	class Edge
+	{
+		int src, dest;
+	};
+
+	// Creates a graph with V vertices and E edges
+	Graph(int v,int e)
+	{
+		V = v;
+		E = e;
+		edge = new Edge[E];
+		for (int i=0; i&lt;e; ++i)
+			edge[i] = new Edge();
+	}
+
+	// A utility function to find the subset of an element i
+	int find(int parent[], int i)
+	{
+		if (parent[i] == -1)
+			return i;
+		return find(parent, parent[i]);
+	}
+
+	// A utility function to do union of two subsets
+	void Union(int parent[], int x, int y)
+	{
+		int xset = find(parent, x);
+		int yset = find(parent, y);
+		parent[xset] = yset;
+	}
+
+
+	// The main function to check whether a given graph
+	// contains cycle or not
+	int isCycle( Graph graph)
+	{
+		// Allocate memory for creating V subsets
+		int parent[] = new int[graph.V];
+
+		// Initialize all subsets as single element sets
+		for (int i=0; i&lt;graph.V; ++i)
+			parent[i]=-1;
+
+		// Iterate through all edges of graph, find subset of both
+		// vertices of every edge, if both subsets are same, then
+		// there is cycle in graph.
+		for (int i = 0; i &lt; graph.E; ++i)
+		{
+			int x = graph.find(parent, graph.edge[i].src);
+			int y = graph.find(parent, graph.edge[i].dest);
+
+			if (x == y)
+				return 1;
+
+			graph.Union(parent, x, y);
+		}
+		return 0;
+	}
+
+	// Driver Method
+	public static void main (String[] args)
+	{
+		/* Let us create the following graph 
+		0 
+		| \ 
+		| \ 
+		1---2 */
+		int V = 3, E = 3;
+		Graph graph = new Graph(V, E);
+
+		// add edge 0-1
+		graph.edge[0].src = 0;
+		graph.edge[0].dest = 1;
+
+		// add edge 1-2
+		graph.edge[1].src = 1;
+		graph.edge[1].dest = 2;
+
+		// add edge 0-2
+		graph.edge[2].src = 0;
+		graph.edge[2].dest = 2;
+
+		if (graph.isCycle(graph)==1)
+			System.out.println( "graph contains cycle" );
+		else
+			System.out.println( "graph doesn't contain cycle" );
+	}
+}
+</rich_text>
+    </node>
   </node>
-  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607326198">
+  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607389364">
     <rich_text>- Trie Algorithm
 - ArrayList to integer Array
 - bit shift, xor, &gt;&gt;&gt;
@@ -97,7 +250,9 @@ private Trie createExampleTrie() {
 - computIfAbsent
 - compare function
 - generics
-- 
+- Union Find
+- Detecting cycle
+- Strings functions
 </rich_text>
     <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
     <rich_text>
@@ -106,7 +261,7 @@ greenshot for print screen or image editing
 keepnote or cherrytree in linux
 </rich_text>
   </node>
-  <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1607326453">
+  <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1607523368">
     <node name="Pentesting" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326258" ts_lastsave="1607326260">
       <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
       <rich_text>
@@ -126,6 +281,9 @@ keepnote or cherrytree in linux
     </node>
     <node name="The Definitive Guide to Web Project Requirements Gathering" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326554" ts_lastsave="1607326560">
       <rich_text link="webs https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/">https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/</rich_text>
+    </node>
+    <node name="React Native" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607523368" ts_lastsave="1607523369">
+      <rich_text link="webs https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</rich_text>
     </node>
   </node>
 </cherrytree>
