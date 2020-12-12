@@ -63,6 +63,95 @@ class Employee {
 }</rich_text>
     </node>
   </node>
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607734032">
+    <rich_text scale="h1" weight="heavy">Topics</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text weight="heavy">Concurrency</rich_text>
+    <rich_text>
+	- Concurrency
+	- threads
+	- deadlock
+	- starvation
+	- parallelize algorithms
+	- consistency
+	- coherence
+- </rich_text>
+    <rich_text weight="heavy">Networking</rich_text>
+    <rich_text>
+   - IPC
+   - TCP/IP
+   - Throughput
+   - Latency
+- </rich_text>
+    <rich_text weight="heavy">Abstraction</rich_text>
+    <rich_text>
+   - OS
+   - File system
+   - database
+   - Caching in modern OS
+- </rich_text>
+    <rich_text weight="heavy">Real-World Performance</rich_text>
+    <rich_text>
+   - Speed of everything. (e.g SSD, RAM, Network)
+- </rich_text>
+    <rich_text weight="heavy">Estimation</rich_text>
+    <rich_text>
+   - Back-of the envelope calculation
+-  </rich_text>
+    <rich_text weight="heavy">Availability and Reliability</rich_text>
+    <rich_text>
+   - Fault tolerence
+   - Handle Network failures
+   - Durability
+
+
+
+</rich_text>
+    <rich_text scale="h1">Systems</rich_text>
+    <rich_text>
+- Hadoop </rich_text>
+    <rich_text link="webs https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf">Map-Reduce</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text scale="h1">Distributed System Design</rich_text>
+    <rich_text>
+- Instagram
+- Twitter
+- TripAdvisor
+- Salesforce.com
+- StackOverflow
+- Youtube
+- Twitter
+- bit.ly
+- paste bin
+
+
+</rich_text>
+    <rich_text scale="h1">Links</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://github.com/checkcheckzz/system-design-interview">checkcheckzz</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text underline="single" link="webs https://dzone.com/articles/component-load-testing" foreground="#1155cc">Building Blocks of a Scalable Architecture</rich_text>
+    <rich_text>
+- Count-min-sketch
+- BloomFilter
+- BloomFilter Calculator
+- </rich_text>
+    <rich_text underline="single" link="webs https://avinetworks.com/what-is-load-balancing/" foreground="#1155cc">Load Balancing A-Z</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text underline="single" link="webs https://medium.com/swlh/an-efficient-framework-to-approach-system-design-problems-cf058f614a84" foreground="#1155cc">An efficient framework to approach system design problems</rich_text>
+    <node name="How to do a system design Interview?" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607733620" ts_lastsave="1607733625">
+      <rich_text>1. Use Cases
+2. Constraints
+3. </rich_text>
+    </node>
+  </node>
   <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607387461">
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
       <rich_text>public class TrieNode {
@@ -242,7 +331,7 @@ class Graph
 </rich_text>
     </node>
   </node>
-  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607389364">
+  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607733322">
     <rich_text>- Trie Algorithm
 - ArrayList to integer Array
 - bit shift, xor, &gt;&gt;&gt;
@@ -253,6 +342,7 @@ class Graph
 - Union Find
 - Detecting cycle
 - Strings functions
+- What is the difference in Senior and mid-level Developers?
 </rich_text>
     <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
     <rich_text>
