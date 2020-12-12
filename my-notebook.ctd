@@ -63,7 +63,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607751149">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607752101">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -191,98 +191,91 @@ class Employee {
 
 				|-
 Availability
-├─ Replication
-│   ├ Master-Slave
-│   ├ Master-Master
-│   └ Buddy replication
-└─ Fail Over
+├── Replication
+│     ├── Master-Slave
+│     ├── Master-Master
+│     ├── Tree replication
+│     └── Buddy replication
+└── Fail Over
 
 Stability
-├ Circuit Breaker
-├ Timeouts
-├ Let it crash / Supervisors
-├ Crash early
-├ Bulkheads
-├ Steady state (clean up resources)
-└ SEDA Throttling
+├── Circuit Breaker
+├── Timeouts
+├── Let it crash / Supervisors
+├── Crash early
+├── Bulkheads
+├── Steady state (clean up resources)
+└── SEDA Throttling
 
 
 Scalability
-├─ State
-│   ├─ Distributed Caching
-│   │   ├─ Write-behind  
-│   │   ├─ Write-through
-│   │   ├─ Eviction policies
-│   │   │   ├─ TTL
-│   │   │   ├─ FIFO
-│   │   │   └─ LIFO
-│   │   └─ Peer-To-Peer
-│   ├─ Data Grids
-│   │   ├─ In-memory storage
-│   │   └─ Durable storage
-│   ├─ Service of Record
-│   │   ├─ NoSQL
-│   │   │   ├─ Key Value databases   
-│   │   │   ├─ Document databases
-│   │   │   ├─ Graph databases
-│   │   │   └─ Datastructure databases
-│   │   └─ RDBMS 
-│   │        ├─ Sharding
-│   │        │   ├─ Partitioning
-│   │        │   └─ Replication
-│   │        ├─ Denormalization
-│   │        └─ ORM + Rich domain model antipattern
-│   ├─ HTTP Caching
-│   │   ├─ Reverse Proxy
-│   │   └─ CDN
-│   ├─ CAP theorem
-│   │   ├─ Consistent / Atomic data
-│   │   └─ Eventually Consistent data
-│   ├─ Concurrency
-│   │   ├─ Message-Passing Concurrency
-│   │   ├─ Software Transactional Memory
-│   │   ├─ Dataflow Concurrency
-│   │   └─ Shared-State Concurrency
-│   ├─ Partitioning
-│   ├─ Replication
-└─ Behavior
-      ├─ Compute Grids
-      ├─ Event-Driven Architecture
-      │   ├─ Messaging
-      │   │   ├─ Publish-Subscribe
-      │   │   ├─ Point-to-Point
-      │   │   ├─ Store-Forward
-      │   │   └─ Request-Reply
-      │   ├─ Actors
-      │   │   ├─ Fire-forget
-      │   │   └─ Fire-Receive-Eventually
-      │   ├─ Enterprise Service Bus
-      │   ├─ Domain Events
-      │   ├─ Event Stream Processing
-      │   ├─ Event Sourcing
-      │   └─ Command &amp; Query Responsibility Segregation (CQRS)
-      ├─ Load-balancing
-      │   ├─ Round-robin allocation
-      │   ├─ Random allocation
-      │   ├─ Weighted allocation
-      │   └─ Dynamic load balancing
-      │        ├─ Work-stealing
-      │        ├─ Work-donating
-      │        └─ Queue-depth querying
-      └─ Parallel Computing
-           ├─ SPMD pattern
-           ├─ Master / Worker pattern
-           ├─ Loop Parallelism pattern
-           ├─ Fork / Join pattern
-           └─ MapReduce pattern
-
-
-
-
-├─
-│
-└─
-
+├── State
+│     ├── Distributed Caching
+│     │     ├── Write-behind  
+│     │     ├── Write-through
+│     │     ├── Eviction policies
+│     │     │     ├── TTL
+│     │     │     ├── FIFO
+│     │     │     └── LIFO
+│     │     └── Peer-To-Peer
+│     ├── Data Grids
+│     │     ├── In-memory storage
+│     │     └── Durable storage
+│     ├── Service of Record
+│     │     ├── NoSQL
+│     │     │     ├── Key Value databases   
+│     │     │     ├── Document databases
+│     │     │     ├── Graph databases
+│     │     │     └── Datastructure databases
+│     │     └── RDBMS 
+│     │            ├── Sharding
+│     │            │     ├── Partitioning
+│     │            │     └── Replication
+│     │            ├── Denormalization
+│     │            └── ORM + Rich domain model antipattern
+│     ├── HTTP Caching
+│     │     ├── Reverse Proxy
+│     │     └── CDN
+│     ├── CAP theorem
+│     │     ├── Consistent / Atomic data
+│     │     └── Eventually Consistent data
+│     ├── Concurrency
+│     │     ├── Message-Passing Concurrency
+│     │     ├── Software Transactional Memory
+│     │     ├── Dataflow Concurrency
+│     │     └── Shared-State Concurrency
+│     ├── Partitioning
+│     └── Replication
+└── Behavior
+       ├── Compute Grids
+       ├── Event-Driven Architecture
+       │     ├── Messaging
+       │     │     ├── Publish-Subscribe
+       │     │     ├── Point-to-Point
+       │     │     ├── Store-Forward
+       │     │     └── Request-Reply
+       │     ├── Actors
+       │     │     ├── Fire-forget
+       │     │     └── Fire-Receive-Eventually
+       │     ├── Enterprise Service Bus
+       │     ├── Domain Events
+       │     ├── Event Stream Processing
+       │     ├── Event Sourcing
+       │     └── Command &amp; Query Responsibility Segregation (CQRS)
+       ├── Load-balancing
+       │     ├── Round-robin allocation
+       │     ├── Random allocation
+       │     ├── Weighted allocation
+       │     └── Dynamic load balancing
+       │            ├── Work-stealing
+       │            ├── Work-donating
+       │            └── Queue-depth querying
+       └── Parallel Computing
+              ├── SPMD pattern
+              ├── Master / Worker pattern
+              ├── Loop Parallelism pattern
+              ├── Fork / Join pattern
+              └── MapReduce pattern
 
 </rich_text>
     <node name="How to do a system design Interview?" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607733620" ts_lastsave="1607733625">
