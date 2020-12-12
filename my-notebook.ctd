@@ -63,7 +63,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607734032">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607751149">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -104,6 +104,9 @@ class Employee {
    - Fault tolerence
    - Handle Network failures
    - Durability
+- BloomFilter
+   - BloomFilter Calculator
+- Count-min-sketch
 
 
 
@@ -112,6 +115,12 @@ class Employee {
     <rich_text>
 - Hadoop </rich_text>
     <rich_text link="webs https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf">Map-Reduce</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://www.slideshare.net/dvirsky/introduction-to-redis">Redis</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://www.slideshare.net/jboner/scalability-availability-stability-patterns">scalability availability stability patterns</rich_text>
     <rich_text>
 
 
@@ -138,20 +147,151 @@ class Employee {
 - </rich_text>
     <rich_text underline="single" link="webs https://dzone.com/articles/component-load-testing" foreground="#1155cc">Building Blocks of a Scalable Architecture</rich_text>
     <rich_text>
-- Count-min-sketch
-- BloomFilter
-- BloomFilter Calculator
+
+
 - </rich_text>
     <rich_text underline="single" link="webs https://avinetworks.com/what-is-load-balancing/" foreground="#1155cc">Load Balancing A-Z</rich_text>
     <rich_text>
 - </rich_text>
     <rich_text underline="single" link="webs https://medium.com/swlh/an-efficient-framework-to-approach-system-design-problems-cf058f614a84" foreground="#1155cc">An efficient framework to approach system design problems</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text scale="h2">ACID</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">A</rich_text>
+    <rich_text>tomic
+</rich_text>
+    <rich_text weight="heavy">C</rich_text>
+    <rich_text>onsistent
+</rich_text>
+    <rich_text weight="heavy">I</rich_text>
+    <rich_text>solated
+</rich_text>
+    <rich_text weight="heavy">D</rich_text>
+    <rich_text>urable
+
+</rich_text>
+    <rich_text scale="h2">BASE</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">B</rich_text>
+    <rich_text>asically </rich_text>
+    <rich_text weight="heavy">A</rich_text>
+    <rich_text>vailable			A BASE system gives up on consistency to improve the performance of the database. Hence most of the famous NoSQL databases are highly available and scalable than ACID-compliant relational databases.
+</rich_text>
+    <rich_text weight="heavy">S</rich_text>
+    <rich_text>oft state						Soft state indicates that the state of the system may change over time, even without input. This is because of the eventual consistency model. 
+</rich_text>
+    <rich_text weight="heavy">E</rich_text>
+    <rich_text>ventually Consistent		Eventual consistency indicates that the system will become consistent over time.
+
+
+				|-
+Availability
+├─ Replication
+│   ├ Master-Slave
+│   ├ Master-Master
+│   └ Buddy replication
+└─ Fail Over
+
+Stability
+├ Circuit Breaker
+├ Timeouts
+├ Let it crash / Supervisors
+├ Crash early
+├ Bulkheads
+├ Steady state (clean up resources)
+└ SEDA Throttling
+
+
+Scalability
+├─ State
+│   ├─ Distributed Caching
+│   │   ├─ Write-behind  
+│   │   ├─ Write-through
+│   │   ├─ Eviction policies
+│   │   │   ├─ TTL
+│   │   │   ├─ FIFO
+│   │   │   └─ LIFO
+│   │   └─ Peer-To-Peer
+│   ├─ Data Grids
+│   │   ├─ In-memory storage
+│   │   └─ Durable storage
+│   ├─ Service of Record
+│   │   ├─ NoSQL
+│   │   │   ├─ Key Value databases   
+│   │   │   ├─ Document databases
+│   │   │   ├─ Graph databases
+│   │   │   └─ Datastructure databases
+│   │   └─ RDBMS 
+│   │        ├─ Sharding
+│   │        │   ├─ Partitioning
+│   │        │   └─ Replication
+│   │        ├─ Denormalization
+│   │        └─ ORM + Rich domain model antipattern
+│   ├─ HTTP Caching
+│   │   ├─ Reverse Proxy
+│   │   └─ CDN
+│   ├─ CAP theorem
+│   │   ├─ Consistent / Atomic data
+│   │   └─ Eventually Consistent data
+│   ├─ Concurrency
+│   │   ├─ Message-Passing Concurrency
+│   │   ├─ Software Transactional Memory
+│   │   ├─ Dataflow Concurrency
+│   │   └─ Shared-State Concurrency
+│   ├─ Partitioning
+│   ├─ Replication
+└─ Behavior
+      ├─ Compute Grids
+      ├─ Event-Driven Architecture
+      │   ├─ Messaging
+      │   │   ├─ Publish-Subscribe
+      │   │   ├─ Point-to-Point
+      │   │   ├─ Store-Forward
+      │   │   └─ Request-Reply
+      │   ├─ Actors
+      │   │   ├─ Fire-forget
+      │   │   └─ Fire-Receive-Eventually
+      │   ├─ Enterprise Service Bus
+      │   ├─ Domain Events
+      │   ├─ Event Stream Processing
+      │   ├─ Event Sourcing
+      │   └─ Command &amp; Query Responsibility Segregation (CQRS)
+      ├─ Load-balancing
+      │   ├─ Round-robin allocation
+      │   ├─ Random allocation
+      │   ├─ Weighted allocation
+      │   └─ Dynamic load balancing
+      │        ├─ Work-stealing
+      │        ├─ Work-donating
+      │        └─ Queue-depth querying
+      └─ Parallel Computing
+           ├─ SPMD pattern
+           ├─ Master / Worker pattern
+           ├─ Loop Parallelism pattern
+           ├─ Fork / Join pattern
+           └─ MapReduce pattern
+
+
+
+
+├─
+│
+└─
+
+
+</rich_text>
     <node name="How to do a system design Interview?" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607733620" ts_lastsave="1607733625">
       <rich_text>1. Use Cases
 2. Constraints
 3. </rich_text>
     </node>
   </node>
+  <node name="Leadership Principle" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607734074" ts_lastsave="1607734074"/>
   <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607387461">
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
       <rich_text>public class TrieNode {
