@@ -63,7 +63,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607824658">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607824941">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -204,6 +204,21 @@ Availability ─┤               └─ Buddy replication
               └── Fail Over</rich_text>
     <rich_text>
 
+</rich_text>
+    <rich_text family="monospace">           ┌─ Circuit Breaker
+           ├─ Timeouts
+           ├─ Let it crash / Supervisors
+Stability ─┼─ Crash early</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text family="monospace">           ├─</rich_text>
+    <rich_text> Bulkheads
+</rich_text>
+    <rich_text family="monospace">           ├─</rich_text>
+    <rich_text> Steady state (clean up resources)
+</rich_text>
+    <rich_text family="monospace">           └─</rich_text>
+    <rich_text>
 
 
 </rich_text>
