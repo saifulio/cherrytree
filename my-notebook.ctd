@@ -63,7 +63,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607752101">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607824658">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -189,16 +189,25 @@ class Employee {
     <rich_text>ventually Consistent		Eventual consistency indicates that the system will become consistent over time.
 
 
-				|-
-Availability
-├── Replication
-│     ├── Master-Slave
-│     ├── Master-Master
-│     ├── Tree replication
-│     └── Buddy replication
-└── Fail Over
 
-Stability
+</rich_text>
+    <rich_text family="monospace">│ - 179		┤ - 180		├ - 195		┼ - 197		└ - 192		┌ - 218		─ - 196</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text family="monospace">                              ┌─ Master-Slave
+              ┌─ Replication ─┼─ Master-Master
+              │               ├─ Tree replication
+Availability ─┤               └─ Buddy replication
+              │
+              └── Fail Over</rich_text>
+    <rich_text>
+
+
+
+</rich_text>
+    <rich_text family="monospace">Stability
 ├── Circuit Breaker
 ├── Timeouts
 ├── Let it crash / Supervisors
@@ -206,9 +215,11 @@ Stability
 ├── Bulkheads
 ├── Steady state (clean up resources)
 └── SEDA Throttling
+</rich_text>
+    <rich_text>
 
-
-Scalability
+</rich_text>
+    <rich_text family="monospace">Scalability
 ├── State
 │     ├── Distributed Caching
 │     │     ├── Write-behind  
@@ -275,7 +286,8 @@ Scalability
               ├── Master / Worker pattern
               ├── Loop Parallelism pattern
               ├── Fork / Join pattern
-              └── MapReduce pattern
+              └── MapReduce pattern</rich_text>
+    <rich_text>
 
 </rich_text>
     <node name="How to do a system design Interview?" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607733620" ts_lastsave="1607733625">
