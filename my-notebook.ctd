@@ -63,7 +63,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607824941">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607826959">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -191,7 +191,7 @@ class Employee {
 
 
 </rich_text>
-    <rich_text family="monospace">│ - 179		┤ - 180		├ - 195		┼ - 197		└ - 192		┌ - 218		─ - 196</rich_text>
+    <rich_text family="monospace">│ - 179		─ - 196   	┤ - 180		├ - 195		┼ - 197		└ - 192		┌ - 218		</rich_text>
     <rich_text>
 
 
@@ -208,29 +208,60 @@ Availability ─┤               └─ Buddy replication
     <rich_text family="monospace">           ┌─ Circuit Breaker
            ├─ Timeouts
            ├─ Let it crash / Supervisors
-Stability ─┼─ Crash early</rich_text>
-    <rich_text>
-</rich_text>
-    <rich_text family="monospace">           ├─</rich_text>
-    <rich_text> Bulkheads
-</rich_text>
-    <rich_text family="monospace">           ├─</rich_text>
-    <rich_text> Steady state (clean up resources)
-</rich_text>
-    <rich_text family="monospace">           └─</rich_text>
+Stability ─┼─ Crash early
+           ├─ Bulkheads
+           ├─ Steady state (clean up resources)
+           └─ SEDA Throttling</rich_text>
     <rich_text>
 
 
 </rich_text>
-    <rich_text family="monospace">Stability
-├── Circuit Breaker
-├── Timeouts
-├── Let it crash / Supervisors
-├── Crash early
-├── Bulkheads
-├── Steady state (clean up resources)
-└── SEDA Throttling
-</rich_text>
+    <rich_text family="monospace">                       ┌─ Distributed Caching
+                       │
+                       ├─ Data Grids
+                       │
+                       ├─ Service of Record
+                       │
+                       ├─ HTTP Caching
+                       │
+                       ├─ CAP theorem
+                       │
+             ┌─ State ─┼─ Concurrency
+             │         │
+Scalability ─┤         ├─ Partitioning
+             │         │
+             │         └─ Replication
+             │
+             │
+             │            ┌─ Compute Grids
+             │            │
+             │            ├─ Event-Driven Architecture
+             │            │
+             │            │
+             │            │
+             │            │
+             │            │                  ┌─ Round-robin allocation
+             │            │                  │
+             │            │                  ├─ Random allocation
+             │            │                  │
+             └─ Behavior ─┼─ Load-balancing ─┼─ Weighted allocation
+                          │                  │
+                          │                  │
+                          │                  │                          ┌─ Work-stealing
+                          │                  │                          │
+                          │                  └─ Dynamic load balancing ─┼─ Work-donating
+                          │                                             │
+                          │                                             └─ Queue-depth querying
+                          │
+                          │            ┌─ SPMD pattern
+                          │            │
+                          │            ├─ Master / Worker pattern
+                          │            │
+                          └─ Parallel ─┼─ Loop Parallelism pattern
+                             Computing │
+                                       ├─ Fork / Join pattern
+                                       │
+                                       └─ MapReduce pattern</rich_text>
     <rich_text>
 
 </rich_text>
