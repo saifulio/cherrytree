@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Java" unique_id="1" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1607318357">
+  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1607972960">
+    <rich_text scale="h3">Things to consider before submit:</rich_text>
     <rich_text>
+- Empty Array
+- Floating number multiplied or divided
+- divide by zero 
+- Negative numbers
+
+
+
+
+
+</rich_text>
+    <rich_text scale="h3">Feedback from facebook</rich_text>
+    <rich_text>
+all positivie
+struggle for the 2nd
+proactive 
+communication 
+correct complexity
+25% chance
+
+ninja
+pirates
+zedi
+
+feb 3 hrs
+
+level 6 - 2 design interview
+product design
+	what required for the product to work
+	
+system design
+bootcamp
+Lead the design
+
+Friday 18
+Monday 4th january
+
 </rich_text>
     <node name="Random" unique_id="2" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315461" ts_lastsave="1607315470">
       <rich_text>import java.util.Random;
@@ -63,7 +100,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607829822">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607972854">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -107,6 +144,25 @@ class Employee {
 - BloomFilter
    - BloomFilter Calculator
 - Count-min-sketch
+
+
+</rich_text>
+    <rich_text scale="h2">System design considerations:</rich_text>
+    <rich_text>
+- How would you build your backend storage? How does that scale to Facebook’s size?
+- How would you lay out the application server layer? What are the responsibilities of the various services?
+- How would you design your mobile API? What are the hard problems in representing the data being sent from server to client?
+- How would you structure your mobile client? How do low-end devices and poor network conditions affect your design?
+- As you’re designing these systems, run through the list of things we’re looking for and make sure you’re able to answer them all for each piece of each app.
+
+1. Backend storage
+2. high level layout
+3. responsibilities of the various services
+4. design mobile API, figure out bottle necks
+5. structure mobile client
+6. Low-end devices
+7. poor network conditions
+8. 
 
 
 
@@ -340,7 +396,7 @@ Scalability ─┤         ├─ Partitioning
     </node>
   </node>
   <node name="Leadership Principle" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607734074" ts_lastsave="1607734074"/>
-  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607387461">
+  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607936057">
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
       <rich_text>public class TrieNode {
 	private HashMap&lt;Character, TrieNode&gt; children;
@@ -518,18 +574,47 @@ class Graph
 }
 </rich_text>
     </node>
+    <node name="Number to Hexadecimal" unique_id="18" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607936057" ts_lastsave="1607936075">
+      <rich_text>/*
+Basic idea: Each time we take a look at the last four digits of
+            binary verion of the input, and maps that to a hex char
+            shift the input to the right by 4 bits, do it again
+            until input becomes 0.
+
+*/
+
+public class Solution {
+
+	char[] map = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
+
+	public String toHex(int num) {
+		if(num == 0) return "0";
+		String result = "";
+		while(num != 0){
+			result = map[(num &amp; 15)] + result; 
+			num = (num &gt;&gt;&gt; 4);
+		}
+		return result;
+	}
+}</rich_text>
+    </node>
   </node>
-  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607733322">
+  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607971298">
     <rich_text>- Trie Algorithm
+- Red black tree
 - ArrayList to integer Array
+- Different sorting algorithm
 - bit shift, xor, &gt;&gt;&gt;
 - multi dimensional ArrayList
 - computIfAbsent
 - compare function
 - generics
+- Iterator
+- TreeMap or TreeSet iterate reverse
 - Union Find
 - Detecting cycle
 - Strings functions
+- 
 - What is the difference in Senior and mid-level Developers?
 </rich_text>
     <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
@@ -537,7 +622,11 @@ class Graph
 
 greenshot for print screen or image editing
 keepnote or cherrytree in linux
+
+
+Buy this course
 </rich_text>
+    <rich_text link="webs https://www.udemy.com/course/software-engineer-interview-unleashed/">https://www.udemy.com/course/software-engineer-interview-unleashed/</rich_text>
   </node>
   <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1607523368">
     <node name="Pentesting" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326258" ts_lastsave="1607326260">
