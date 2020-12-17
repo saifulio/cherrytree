@@ -100,7 +100,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1607973124">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608197679">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -192,6 +192,8 @@ class Employee {
 - Twitter
 - bit.ly
 - paste bin
+
+
 
 
 </rich_text>
@@ -397,9 +399,898 @@ Scalability ─┤         ├─ Partitioning
 2. Constraints
 3. </rich_text>
     </node>
+    <node name="Interview LInks" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607979839" ts_lastsave="1607987348">
+      <rich_text scale="h2">Interviews</rich_text>
+      <rich_text>
+1. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=jItLuOTsCX4">Multi-location tracker on map</rich_text>
+      <rich_text>
+2. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=q0KGYwNbf-0">Design a Code-Deployment system</rich_text>
+      <rich_text>
+3. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=vpa2vQdF-AI">Design Tiktok</rich_text>
+      <rich_text>
+4. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=VJpfO6KdyWE">Instagram</rich_text>
+      <rich_text>
+5. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=zx3AxVlD-p0">Instagram 2</rich_text>
+      <rich_text>
+6. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=k-E4YdEs8qM">Twitter API</rich_text>
+      <rich_text>
+7. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=z8BvhOMtZ7c">Uber</rich_text>
+      <rich_text>
+8. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=PDWD6IqU_nQ">Facebook Newsfeed</rich_text>
+      <rich_text>
+9. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=z6fDxUevjRY">Amazon Ranking System</rich_text>
+      <rich_text>
+10. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=lOcqPEOROwQ">Google Maps</rich_text>
+      <rich_text>
+11. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=LePt0PUKIjE">Uber Eats</rich_text>
+      <rich_text>
+12. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=TlkTbkM69ns">Pinterest</rich_text>
+      <rich_text>
+13. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=NNFymlgitJs">Twitter</rich_text>
+      <rich_text>
+14. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=shp63TTI1ok">Web crawler for indexing pages</rich_text>
+      <rich_text>
+
+
+
+</rich_text>
+      <rich_text scale="h2">Tutorial video</rich_text>
+      <rich_text>
+1. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=bUHFg8CZFws">Step by step guide</rich_text>
+      <rich_text>
+2. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=BKZxZwUgL3Y">Design distributed web crawler</rich_text>
+      <rich_text>
+3. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=U0xTu6E2CT8">Dropbox System design</rich_text>
+    </node>
+    <node name="Full Loop Interview Guide - Software Engineering" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608197679" ts_lastsave="1608202242">
+      <rich_text scale="h1" foreground="#1e1e9090ffff">Onsite Interview Guide</rich_text>
+      <rich_text>
+
+If you’ve completed a Facebook initial technical screen, you’ve gotten a great start 
+on preparing for your onsite interview. Much of Part 1 of this document will look
+familiar to you, since preparing for an onsite interview at Facebook involves many
+of the same steps as preparing for an initial tech screen. 
+
+If you haven’t completed a Facebook initial technical screen, don’t worry! This 
+guide contains everything you’ll need to plan, practice, and prepare for your onsite 
+interview at Facebook.
+
+</rich_text>
+      <rich_text scale="h2" foreground="#1e1e9090ffff">Part 1: Coding</rich_text>
+      <rich_text>
+Just like preparing for a tech screen, the most important thing you can do to prepare for your onsite
+interview is to practice coding. Even the most experienced engineers need to prepare and practice
+to do well in an interview. For example, if you haven’t practiced solving new problems under time
+constraints, interviewers may think you’re unqualified when you’re simply unprepared.
+
+The coding portions of the onsite interview will be similar in structure to your initial tech screen, with
+a few differences:
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">1. Format.</rich_text>
+      <rich_text weight="heavy"> </rich_text>
+      <rich_text>If you have an onsite interview at Facebook, you’ll likely be coding on a whiteboard. Be
+sure to practice whiteboarding your solutions so you’re comfortable working that way.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">2. Number.</rich_text>
+      <rich_text> Most interviewees complete two separate coding interview sessions during their
+onsite interviews instead of one like the initial tech screen.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">3. Difficulty</rich_text>
+      <rich_text foreground="#1e1e9090ffff">.</rich_text>
+      <rich_text> Onsite coding interviews frequently feature more challenging problems, and
+interviewers may ask more or more in-depth follow-up questions to assess your solution and
+thought process.
+
+Have questions about the format or details of your specific interview? Your recruiter can help!
+
+</rich_text>
+      <rich_text scale="h3" foreground="#1e1e9090ffff">What We Look For</rich_text>
+      <rich_text>
+Your interviewer will be thinking about how your skills and experience might help their teams. Help
+them understand the value you could bring by focusing on these traits and abilities:
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">• Communication</rich_text>
+      <rich_text foreground="#1e1e9090ffff">.</rich_text>
+      <rich_text> Are you asking for requirements and clarity when necessary, or are you
+just diving into the code? Your initial tech screen should be a conversation, so don’t forget
+to ask questions.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">• Problem solving.</rich_text>
+      <rich_text> We’re evaluating how you comprehend and explain complex ideas. Are
+you providing the reasoning behind a particular solution? Developing and comparing multiple
+solutions? Using appropriate data structures? Speaking about space and time complexity?
+Optimizing your solution?
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">• Coding.</rich_text>
+      <rich_text> Can you convert solutions to executable code? Is the code organized and does it
+capture the right logical structure?
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">• Verification.</rich_text>
+      <rich_text> Are you considering a reasonable number of test cases or coming up with a
+good argument for why your code is correct? If your solution has bugs, are you able to walk
+through your own logic to find them and explain what the code is doing?
+
+</rich_text>
+      <rich_text scale="h3" foreground="#1e1e9090ffff">How to Prepare</rich_text>
+      <rich_text>
+Interviewers can only assess your skills and abilities based on what you show them during your
+interview, so it’s important to plan and prepare to best showcase your strengths.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">1. Before you practice, plan!</rich_text>
+      <rich_text>
+	Be honest with yourself—only you know how much prep time you’ll need. Make the most of your
+	prep time by following these steps to plan your approach before you start practicing.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Schedule time to study and practice.</rich_text>
+      <rich_text> Block out time every day to write code. Target medium
+	and hard problems.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Prioritize breadth over depth.</rich_text>
+      <rich_text> It’s much better to practice solving fewer example problems of
+	many problem types than to become very familiar with one type at the expense of the others.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Set aside time to review what you’ve practiced. </rich_text>
+      <rich_text>As you solve problems, make cheat sheets
+	or flash cards to review later. Revision and repetition will strengthen your understanding of core
+	concepts.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">2. Review core areas</rich_text>
+      <rich_text>
+	Everyone could use a refresher in at least one area.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Algorithm design/analysis.</rich_text>
+      <rich_text> Consider different algorithms and algorithmic techniques, such as
+	sorting, divide-and-conquer, recursion, etc.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Data structures.</rich_text>
+      <rich_text> Make sure you’re using the right tool for the right job. Keep in mind how
+	and when certain data structures should be used and leveraged, and why some are preferred
+	over others.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Other CS fundamentals.</rich_text>
+      <rich_text> Review foundational techniques, including recursion, graph theory,
+	tree traversal, combinatorial problems, and so on.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">3. Focus on key practice strategies</rich_text>
+      <rich_text>
+Reading through sample questions, recognizing concepts, and having a vague understanding of
+these concepts won’t be enough to help you shine. You need to practice! Make sure you’re setting
+your practice sessions up for success by following these tips from engineers who’ve been through
+the process.
+
+</rich_text>
+      <rich_text foreground="#000000000000" weight="heavy">Practice coding the way you’ll code during your interview.</rich_text>
+      <rich_text> You’ll most likely be coding at a
+whiteboard, but check with your recruiter.
+
+</rich_text>
+      <rich_text weight="heavy">Code in your strongest language. </rich_text>
+      <rich_text>Avoid trying to learn a new language in a few weeks.
+
+</rich_text>
+      <rich_text weight="heavy">Practice talking through the problem space and possible solutions before you dive
+into code, and practice talking through your decisions out loud as you code.</rich_text>
+      <rich_text> This can be
+unnatural in an interview setting, especially if you’re used to coding alone. But your interviewers
+will be evaluating your thought process as well as your coding abilities, so explaining your decisions
+as you code is crucial to helping them understand your choices.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">4. Understand the types of problems you may encounter</rich_text>
+      <rich_text>
+Practice a variety of different problems—and understand why we ask them—so you’re prepared to
+solve them during your onsite interview.
+
+</rich_text>
+      <rich_text weight="heavy">Don’t be surprised if the questions sound contrived. </rich_text>
+      <rich_text>Problems may be different than what
+you’re probably tackling in a day-to-day job. We won’t ask a “puzzle” question, but questions
+may be different than real-world questions because they need to be described and solved in
+10-20 minutes.
+
+</rich_text>
+      <rich_text weight="heavy">Problems may assess the depth of your knowledge and your versatility.</rich_text>
+      <rich_text> For example, your
+interviewer might ask you to solve a problem any way you want. Then, they could add constraints
+on the running or space characteristics and ask you to solve it again.
+
+</rich_text>
+      <rich_text weight="heavy">Problems may focus on edge cases.</rich_text>
+      <rich_text> You might be asked to parse some data format or mini
+language. Your answers demonstrate your ability to handle multiple states in your head.
+
+</rich_text>
+      <rich_text weight="heavy">Problems may test how well you know how things work under the hood.</rich_text>
+      <rich_text> For example, you
+might be asked to implement well-known library functions.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">5. Decide what resources you’ll use to prepare</rich_text>
+      <rich_text>
+It’s easy to be overwhelmed by the number of online resources or the detail in an entire
+theoretical algorithms book. For example, CLRS has excellent info—but it may not
+be the right resource for your study needs and timeline. Pick two or three resources and focus
+on those.
+
+</rich_text>
+      <rich_text weight="heavy">Resources from Facebook:</rich_text>
+      <rich_text>
+	• Facebook Initial Tech Screen Study
+	Guide: Sample Problems &amp; Solutions
+	• Cracking the Facebook Coding
+	Interview Videos (The Approach and
+	</rich_text>
+      <rich_text link="webs https://vimeo.com/158532188">Problem Walk-through</rich_text>
+      <rich_text>. The password
+	is FB_IPS.)
+	• </rich_text>
+      <rich_text link="webs https://www.interviewbit.com/">InterviewBit</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text weight="heavy">Books:</rich_text>
+      <rich_text>
+	• </rich_text>
+      <rich_text link="webs https://www.amazon.com/Cracking-Coding-Interview-Gayle-McDowell/dp/0984782850/">Cracking the Coding Interview</rich_text>
+      <rich_text>
+	• </rich_text>
+      <rich_text link="webs https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836/">Elements of Programming Interviews</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text weight="heavy">Other Websites:</rich_text>
+      <rich_text>
+	</rich_text>
+      <rich_text link="webs https://leetcode.com/">• LeetCode</rich_text>
+      <rich_text>
+	</rich_text>
+      <rich_text link="webs https://www.hackerrank.com/">• HackerRank</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text weight="heavy">Want to know even more?</rich_text>
+      <rich_text> Check out these
+news articles for firsthand experiences of the
+technical interview process:
+</rich_text>
+      <rich_text link="webs https://medium.com/@XiaohanZeng/i-interviewed-at-five-top-companies-in-silicon-valley-in-five-days-and-luckily-got-five-job-offers-25178cf74e0f">• I Interviewed at Five Top Companies in
+Silicon Valley in Five Days, and Luckily
+Got Five Job Offers</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">How to Approach Problems During Your Interview</rich_text>
+      <rich_text>
+
+Your interview is a conversation, not a test! Your interviewer wants to find out what it would feel like
+to work with you and solve a problem together, so approach problems like you’re working on a team
+together and collaborating to build the solution.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">1. Analyze the problem</rich_text>
+      <rich_text>
+	Before you jump into building a solution, be sure you’ve taken the time to fully understand and talk
+	through the problem.
+	
+	</rich_text>
+      <rich_text weight="heavy">Ask clarifying questions.</rich_text>
+      <rich_text> Talk through the problem and ask follow-up questions to make sure
+	you understand the exact problem you’re trying to solve.
+	
+	</rich_text>
+      <rich_text weight="heavy">Let us know if you’ve seen the problem previously.</rich_text>
+      <rich_text> That will help us understand your context.
+	
+	</rich_text>
+      <rich_text weight="heavy">Talk through the problem and your approach, and frame both like you’re working with
+	your interviewer.</rich_text>
+      <rich_text> Try using words like “we” and “our” instead of “I” and “my” when you walk
+	through the problem and solution to make the interview feel more collaborative.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">	2. Code up your solution</rich_text>
+      <rich_text>
+	Get your thoughts down in code and explain your decisions and actions as you go.
+	
+	</rich_text>
+      <rich_text weight="heavy">Don’t forget to talk while you code!</rich_text>
+      <rich_text> It’s crucial to help the interviewer understand your choices
+	and thought process.
+	
+	</rich_text>
+      <rich_text weight="heavy">Iterate.</rich_text>
+      <rich_text> Don’t always try to jump immediately to the most clever solution. Talk through multiple
+	possible solutions, then decide which will work best and explain your decision.
+	
+	</rich_text>
+      <rich_text weight="heavy">Leave yourself plenty of room.</rich_text>
+      <rich_text> You may need to add code or notes between lines later.
+
+	</rich_text>
+      <rich_text weight="heavy">Consider different algorithms and algorithmic techniques,</rich_text>
+      <rich_text> such as sorting, divide-and-
+	conquer, recursion, etc.
+
+	</rich_text>
+      <rich_text weight="heavy">Think about data structures, particularly those used most often</rich_text>
+      <rich_text> (array, stack/queue, hashset/
+	hashmap/hashtable/dictionary, tree/binary tree, heap, graph, etc.)
+	
+	</rich_text>
+      <rich_text weight="heavy">Be prepared to talk about O memory constraints</rich_text>
+      <rich_text> on the complexity of the algorithm you’re
+	writing and its running time as expressed by big-O notation.
+	
+	</rich_text>
+      <rich_text weight="heavy">Avoid solutions with lots of edge cases or huge if/else if/else blocks, in most cases.</rich_text>
+      <rich_text>
+	Deciding between iteration and recursion can be an important step.
+	
+	</rich_text>
+      <rich_text weight="heavy">Use descriptive variable names.</rich_text>
+      <rich_text> This will take time, but it will prevent you from losing track of
+	what your code is doing.
+	
+	</rich_text>
+      <rich_text weight="heavy">Simplify.</rich_text>
+      <rich_text> If you can’t explain your concept clearly in five minutes, it’s probably too complex.
+	
+	</rich_text>
+      <rich_text weight="heavy">Draw out a sample input.</rich_text>
+      <rich_text> Draw a picture or write out the variable values to see how the
+	variables change as your code executes. You’ll see insights and bugs faster and be less likely to lose
+	track when you’re thinking through edge cases in your head!
+
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">3. Stuck? Try these approaches!</rich_text>
+      <rich_text>
+	Everyone, even engineers with years of experience, will get stuck at some point. Relax—it doesn’t
+	mean you’ve failed! The interviewer will be assessing your ability to methodically approach the
+	problem from several angles and ask the right questions to get unstuck.
+	
+	</rich_text>
+      <rich_text weight="heavy">Draw pictures.</rich_text>
+      <rich_text> It’s easy to lose track when you’re thinking through an edge case or how variables
+	change as your code executes, so use the board! Writing everything out helps you see insights and
+	bugs faster and make fewer mistakes. Draw several different test inputs. Capture how you would
+	get the desired output by hand, then talk through your approach and translate it into code.
+	
+	</rich_text>
+      <rich_text weight="heavy">Ask questions.</rich_text>
+      <rich_text> For example, if you don’t know the exact syntax, you can ask the interviewer
+	for help.
+	
+	</rich_text>
+      <rich_text weight="heavy">Think out loud as a way to slow yourself down.</rich_text>
+      <rich_text> Use phrases like “Let’s try doing it this way” or
+	“We need to consider all the possibilities” to give yourself time to think while still making progress.
+	Talk through what you know.
+	
+	</rich_text>
+      <rich_text weight="heavy">Talk through what you first thought might work and explain why it won’t.</rich_text>
+      <rich_text> You might think
+	of a way to modify your original solution so it works or another question to ask to help you decide
+	on your next steps.
+
+</rich_text>
+      <rich_text weight="heavy">	Talk through the bounds on space and runtime.</rich_text>
+      <rich_text> For example, say:
+	“We have to at least look at all of the items, so we can’t do better than X.”
+	“The brute force approach is to test all possibilities, which is X.”
+	“The answer will contain X items, so we must at least spend that amount of time.”
+	
+	</rich_text>
+      <rich_text weight="heavy">Call a helper function and keep moving. </rich_text>
+      <rich_text>If you can’t immediately think of how to implement
+	some part of your algorithm, big or small, just skip over it. Write a call to a reasonably named
+	helper function, say what it will do, and keep going. If the helper function is trivial, save it for the
+	end. You can even ask your interviewer if they’d like to help implement it.
+	
+	</rich_text>
+      <rich_text weight="heavy">Solve a simpler version of the problem.</rich_text>
+      <rich_text> Not sure how to find the 4th-largest item in the set?
+	Think about how to find the largest item and see if you can adapt that approach.
+	
+	</rich_text>
+      <rich_text weight="heavy">Propose a solution that’s naive and potentially inefficient. </rich_text>
+      <rich_text>Consider optimizations later. Use
+	brute force. Do whatever it takes to get some kind of answer.
+	
+	</rich_text>
+      <rich_text weight="heavy">Remember that it’s ok if you don’t know!</rich_text>
+      <rich_text> No one who works at Facebook is perfect, and we
+	don’t look for perfection in people we interview. If you aren’t sure if something is true or if it’s
+	the best solution, then say that. Explain what you do know, and your interviewer will ask you
+	follow-up questions.
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">4. Verify your solution</rich_text>
+      <rich_text>
+	You don’t get more credit for doing this in your head! Testing your solution on the board, out loud
+	will help you find bugs and clear up any confusion your interviewer may have.
+	
+	</rich_text>
+      <rich_text weight="heavy">Walk through your solution by hand, out loud, with an example input.</rich_text>
+      <rich_text> Write down what
+	values the variables hold as the program is running.
+	
+	</rich_text>
+      <rich_text weight="heavy">Look for off-by-one errors.</rich_text>
+      <rich_text> Should your for loop use a “&lt;” instead of a “&lt;=”?
+
+
+	</rich_text>
+      <rich_text weight="heavy">Test edge cases.</rich_text>
+      <rich_text> These might include empty sets, single item sets, or negative numbers. Don’t
+	forget about software verification—formal or otherwise!
+	
+	</rich_text>
+      <rich_text weight="heavy">Ask yourself if you would approve your solution as part of your codebase.</rich_text>
+      <rich_text> Explain your
+	answer to your interviewer. Make sure your solution is correct and efficient, and that it clearly
+	reflects the ideas you’re trying to express.
+
+</rich_text>
+      <rich_text scale="h3" foreground="#1e1e9090ffff">Part 2: Systems &amp; Product Design</rich_text>
+      <rich_text>
+
+There are two types of design interviews: systems design and product design. Interviewers will
+evaluate your ability to determine what you should build and to solve large problems. Your interviewer
+will ask you a very broad design problem and evaluate your solution. We aim to match people
+interviewing with engineers who have related experience, so your conversation will be based in an
+area you’re at least slightly familiar with.
+
+This portion of the interview will consist of one or two conversations, 45 minutes each. You will only
+need to practice these skills if you are interviewing for a position which requires these competencies.
+Your interviewer will let you know whether you need to prepare for this portion of the interview.
+
+If you have deep, specialized knowledge, we may ask something specific to that area. More often, we’ll
+ask you to design something you’ve never built before. And the scope will be large enough that you
+won’t be able to cover everything in detail.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">The Systems Design Interview</rich_text>
+      <rich_text>
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">1. Possible question topics</rich_text>
+      <rich_text>
+	Interviewers will focus on your familiarity with complex products or systems and assess your ability
+	to arrive at answers in the face of unusual constraints.
+	
+	You should be familiar with the areas below—but we’re not looking for you to be an expert in all of
+	them. You should know enough to weigh design considerations (and understand when to consult
+	an expert) for:
+
+	Concurrency (threads, deadlock, starvation, consistency, coherence)
+	• Caching
+	• Database partitioning, replication, sharding, CAP Theorem
+	• Networking (IPC, TCP/IP)
+	• Real-world performance (relative performance RAM, disk, your network, SSD)
+	• Availability and reliability (types of failures, failure units, how failures may
+	manifest, mitigations, etc.)
+	• Data storage and data aggregation
+	• QPS capacity / machine estimation (back of the envelope estimates), byte size estimation
+
+	</rich_text>
+      <rich_text foreground="#1e1e9090ffff">2. Example questions</rich_text>
+      <rich_text>
+	We might ask you to:
+	• Architect a worldwide video distribution system
+	• Build Facebook chat
+	• Design a mobile image search client
+
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">How to Practice</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text weight="heavy">Review the complex systems you’ve already designed. </rich_text>
+      <rich_text>What would you change about your
+approach if you did it all over again? What worked well?
+
+</rich_text>
+      <rich_text weight="heavy">Think about how you’d design one of Facebook’s (or any other large tech company’s)
+existing systems.</rich_text>
+      <rich_text> It’s a good practice to think through the complicated, high-scale systems you
+already use every day. How would you design one from the ground up?
+
+</rich_text>
+      <rich_text weight="heavy">Weigh multiple approaches and reflect on the tradeoffs in your design:</rich_text>
+      <rich_text>
+	• Performance vs. scalability
+	• Latency vs. throughput
+	• Availability vs. consistency
+</rich_text>
+      <rich_text weight="heavy">Take any well-known app and imagine you’re going to build the primary feature.</rich_text>
+      <rich_text> For example,
+imagine you’re going to build video distribution for Facebook Video, or group chat for WhatsApp.
+Now figure out how you would build the various pieces out:
+	• How would you build your backend storage? How does that scale to Facebook’s size?
+	• How would you lay out the application server layer? What are the responsibilities of the
+	various services?
+	• How would you design your mobile API? What are the hard problems in representing the
+	data being sent from server to client?
+	• How would you structure your mobile client? How do low-end devices and poor network
+	conditions affect your design?
+	• As you’re designing these systems, run through the list of things we’re looking for and make
+	sure you’re able to answer them all for each piece of each app.
+
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">The Product Design Interview</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">1. Possible Question topics</rich_text>
+      <rich_text>
+
+Interviewers will focus on building a product or API at scale that supports an end user product or
+service.
+
+You should be familiar with the areas below—but we’re not looking for you to be an expert in all of
+them. You should know enough to weigh design considerations (and understand when to consult
+an expert) for:
+
+	• Storage data models
+	• Scalability
+	• Design patterns
+	• Data ownership
+	• Protocols
+	• Data formats
+	• Client-server design
+	• Designing for long term vs. complexity
+	• Accommodating possible product changes
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">2. Example Questions</rich_text>
+      <rich_text>
+We might ask you to:
+	• Design a service or product API
+	• Design a chat service or a feed API
+	• Design an email server
+	
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">3. How to practice</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text weight="heavy">Reflect on your projects. Think about the projects you’ve built.</rich_text>
+      <rich_text> What was easy, what was
+difficult?
+
+</rich_text>
+      <rich_text weight="heavy">Weigh multiple approaches and reflect on the tradeoffs in your design:</rich_text>
+      <rich_text>
+	• Easy-to-build APIs vs. long-term APIs
+	• UI complexity vs. server complexity
+	• Payload size vs. performance
+
+</rich_text>
+      <rich_text weight="heavy">Articulate any assumptions you make,</rich_text>
+      <rich_text> such as number of users, frequency of use, etc.
+</rich_text>
+      <rich_text weight="heavy">Think through specific questions and answer them as you build.</rich_text>
+      <rich_text> For example, if your
+interviewer asks you to describe how you’d design an email server, you might think through:
+	• How do you store mail, especially as the system gets large enough that it won’t fit
+	on one machine?
+	• How do you handle mailing lists with large numbers of recipients?
+	• How do you handle people abusing the system for spam?
+	• How do you guarantee the reliability of the system in the face of potential system failures?
+
+</rich_text>
+      <rich_text scale="h3" foreground="#1e1e9090ffff">How to Approach Problems During Your Interview</rich_text>
+      <rich_text>
+
+Overall, imagine you’re designing a system and sharing it with a colleague for their input. Just like in
+the coding interview, think of this as a conversation—not a test! As you’re designing, your interviewer
+will be looking to see if you can follow the steps outlined below and how well you can adjust the
+design when requirements or constraints change.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">1. Analyze the problem</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text weight="heavy">Spend the first three minutes asking clarifying questions.</rich_text>
+      <rich_text> Keep asking until everything the
+interviewer is looking for is clear to you.
+
+</rich_text>
+      <rich_text weight="heavy">Start with requirements.</rich_text>
+      <rich_text> Your interviewer may ask a vague question like, “How would you
+architect the backend for a messaging system?” Start by asking about the requirements:
+
+	• How many users are we talking about?
+	• How many messages sent?
+	• How many messages read?
+	• What are the latency requirements for sender -- receiver message delivery?
+	• How are you going to store messages?
+	• What operations does this data store need to support?
+	• What operations is it optimized for?
+
+
+</rich_text>
+      <rich_text weight="heavy">Determine which parts of the problem are important.</rich_text>
+      <rich_text> Consider and explain which will affect
+the overall design.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">2. Design your solution</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text weight="heavy">After gathering requirements, begin at the highest level possible.</rich_text>
+      <rich_text> Outline your approach,
+then think about how it can be broken down into subparts. Discuss the system pros and cons
+before you focus on trade-offs and alternatives.
+
+</rich_text>
+      <rich_text weight="heavy">But don’t stay high level.</rich_text>
+      <rich_text> Once you get the high-level portion out of the way, pick a component
+you can do a deep dive into.
+
+</rich_text>
+      <rich_text weight="heavy">Draw boxes-and-arrows whiteboard diagrams that clearly describe the relationships
+</rich_text>
+      <rich_text>among different system or product components and illustrate the entire problem and solution
+space.
+
+</rich_text>
+      <rich_text weight="heavy">Narrate your thoughts as you go.</rich_text>
+      <rich_text> Talk through various solutions and the pros and cons of
+each approach. Explain your choices, discuss tradeoffs, and describe how you make a decision
+around them.
+
+</rich_text>
+      <rich_text weight="heavy">Think at scale.</rich_text>
+      <rich_text> Identify and discuss any bottlenecks and limitations of your design.
+
+</rich_text>
+      <rich_text weight="heavy">Explain how your solution handles success and failure cases.</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">3. Keep in mind</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text weight="heavy">Ask questions as you’re designing.</rich_text>
+      <rich_text> If there’s anything you’re unsure about, ask! Ask your
+interviewer if you’re on the right track, and listen to what they have to say.
+
+</rich_text>
+      <rich_text weight="heavy">Avoid using verbiage or jargon you don’t know very well.</rich_text>
+      <rich_text> Be prepared to discuss in detail
+anything you’ve listed on your resume.
+
+</rich_text>
+      <rich_text weight="heavy">Be honest about what you don’t know.</rich_text>
+      <rich_text> Interviewers understand that one person cannot
+possibly be an expert on all aspects of systems and product design and architecture.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Where to Learn More</rich_text>
+      <rich_text>
+	• </rich_text>
+      <rich_text link="webs https://www.educative.io/courses/grokking-the-system-design-interview">Grokking the System Design Interview (Video)</rich_text>
+      <rich_text>
+	• </rich_text>
+      <rich_text link="webs https://github.com/donnemartin/system-design-primer">System Design Primer (GitHub)</rich_text>
+      <rich_text>
+	• </rich_text>
+      <rich_text link="webs https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview">How do I prepare to answer design questions in a technical interview? (Quora)</rich_text>
+      <rich_text>
+	• </rich_text>
+      <rich_text link="webs https://www.hiredintech.com/courses/system-design">HiredInTech System Design for Tech Interviews course</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h3" foreground="#1e1e9090ffff">Part 3: Getting to Know You</rich_text>
+      <rich_text>
+
+This portion of your onsite interview will consist of a single 45-minute session. Your interviewer will
+want to learn about your background and interests, what you’re passionate about in tech, and what
+kind of impact you want to make. We also want to know what it’s like to work with you every day, what
+kind of a colleague and/or leader you are, and how you handle challenges.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">What We Look For</rich_text>
+      <rich_text>
+Facebook values self starters who identify and tackle hard problems. Almost everything we do is done
+within larger groups, so we also value collaboration and partnership. We encourage you to read more
+about our company values on our Facebook Careers website.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">What We Ask</rich_text>
+      <rich_text>
+We may ask you to:
+• Discuss anything that’s on your resume, including current projects and details.
+• Provide specific examples about what you did and the resulting impact.
+• Critique yourself and share what you learned from a past situation.
+• Talk about what you like about your current role and/or being a developer.
+• Discuss why you’d like to make a change.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">How to Prepare</rich_text>
+      <rich_text>
+Just like with coding and design interviews, it’s important to prepare ahead of time for interviews
+designed to get to know you better.
+
+</rich_text>
+      <rich_text foreground="#000000000000" weight="heavy">1. Determine what stories you want to share</rich_text>
+      <rich_text>
+Start by identifying examples of situations where your behaviors or actions have resulted in
+positive outcomes or illustrate your skills in leadership, teamwork, planning, taking initiative, and
+customer service.
+
+</rich_text>
+      <rich_text foreground="#000000000000" weight="heavy">Think beyond your work experience.</rich_text>
+      <rich_text> You can share examples of coursework, internships,
+hobby projects, volunteer work, etc. If possible, include different types of examples to showcase
+the breadth of your skills in different situations.
+
+</rich_text>
+      <rich_text foreground="#000000000000" weight="heavy">Think about challenges and what you’ve learned.</rich_text>
+      <rich_text foreground="#000000000000"> </rich_text>
+      <rich_text>Think through the tough situations you’ve
+faced and explain what you’ve learned from each. Keep in mind that sharing some examples with
+negative results can effectively highlight your strengths in the face of adversity and showcase your
+openness to learn and grow.
+
+</rich_text>
+      <rich_text foreground="#000000000000" weight="heavy">Be specific.</rich_text>
+      <rich_text> Instead of generalizing about several events, give a detailed account of one event.
+
+</rich_text>
+      <rich_text foreground="#000000000000" weight="heavy">Be honest.</rich_text>
+      <rich_text> Don’t embellish or omit any part of the story. The interviewer will be able to see if
+your answer is built on a weak foundation.
+
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">2. Use the STAR format</rich_text>
+      <rich_text>
+
+Write out five to seven examples of your successes using the STAR format outlined below. Writing
+these out before your interview will help you recall all the details and stay on track when you tell
+your story in the interview, and the STAR approach will help you frame each story you share with
+a beginning, middle, and end. You can use these stories to answer almost any question in this
+portion of your interview.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">Situation:</rich_text>
+      <rich_text> Describe the situation you were in or the task you needed to accomplish. this situation
+can be from a previous job, volunteer experience, or any relevant event.
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">Task:</rich_text>
+      <rich_text> What was your specific goal? How did your goal impact any larger project goals or
+outcomes?
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">Action:</rich_text>
+      <rich_text> What specific steps did you take to achieve your goal? What obstacles did you encounter,
+and what steps did you take to overcome them? (Focus on your individual contribution and not
+the team’s accomplishments. Say ‘I’ not ‘we.’)
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">Result:</rich_text>
+      <rich_text> Describe the outcome of your actions, and don’t be shy about taking credit. What
+happened? What did you accomplish and learn? Help the interviewer understand why these results
+were important.
+
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff" weight="heavy">3. Get familiar with Facebook’s technical environment</rich_text>
+      <rich_text>
+
+What do you want to work on? What features would you like to improve? What about our work
+excites you? Know about Facebook’s teams, projects, products, and challenges so you can ask the
+interviewer relevant questions. Check out our:
+
+• </rich_text>
+      <rich_text link="webs https://www.facebook.com/Engineering">Facebook Engineering Facebook page</rich_text>
+      <rich_text>
+• </rich_text>
+      <rich_text link="webs https://engineering.fb.com/videos/">Facebook Code videos</rich_text>
+      <rich_text>
+• </rich_text>
+      <rich_text link="webs https://opensource.facebook.com/">Facebook Open Source website</rich_text>
+      <rich_text>
+• </rich_text>
+      <rich_text link="webs https://www.facebook.com/careers/life/engineering-leadership-at-facebook">Engineering Leadership at Facebook blog</rich_text>
+    </node>
   </node>
   <node name="Leadership Principle" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607734074" ts_lastsave="1607734074"/>
-  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1607936057">
+  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607971298">
+    <rich_text>- Trie Algorithm
+- Red black tree
+- ArrayList to integer Array
+- Different sorting algorithm
+- bit shift, xor, &gt;&gt;&gt;
+- multi dimensional ArrayList
+- computIfAbsent
+- compare function
+- generics
+- Iterator
+- TreeMap or TreeSet iterate reverse
+- Union Find
+- Detecting cycle
+- Strings functions
+- 
+- What is the difference in Senior and mid-level Developers?
+</rich_text>
+    <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
+    <rich_text>
+
+greenshot for print screen or image editing
+keepnote or cherrytree in linux
+
+
+Buy this course
+</rich_text>
+    <rich_text link="webs https://www.udemy.com/course/software-engineer-interview-unleashed/">https://www.udemy.com/course/software-engineer-interview-unleashed/</rich_text>
+  </node>
+  <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1607523368">
+    <node name="Pentesting" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326258" ts_lastsave="1607326260">
+      <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
+      <rich_text>
+
+greenshot for print screen or image editing
+keepnote or cherrytree in linux
+</rich_text>
+    </node>
+    <node name="Open Banking, PSD2 and GDPR. FinTech" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326367" ts_lastsave="1607326385">
+      <rich_text link="webs https://www.udemy.com/course/a-course-on-api-and-open-banking-gdpr-by-piyush-singh/">https://www.udemy.com/course/a-course-on-api-and-open-banking-gdpr-by-piyush-singh/</rich_text>
+      <rich_text>
+
+</rich_text>
+    </node>
+    <node name="Java Multithreading, Concurrency &amp; Performance Optimization" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326453" ts_lastsave="1607326577">
+      <rich_text link="webs https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/">https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/</rich_text>
+    </node>
+    <node name="The Definitive Guide to Web Project Requirements Gathering" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326554" ts_lastsave="1607326560">
+      <rich_text link="webs https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/">https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/</rich_text>
+    </node>
+    <node name="React Native" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607523368" ts_lastsave="1607523369">
+      <rich_text link="webs https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</rich_text>
+    </node>
+  </node>
+  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1608027528">
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
       <rich_text>public class TrieNode {
 	private HashMap&lt;Character, TrieNode&gt; children;
@@ -601,59 +1492,61 @@ public class Solution {
 	}
 }</rich_text>
     </node>
-  </node>
-  <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607971298">
-    <rich_text>- Trie Algorithm
-- Red black tree
-- ArrayList to integer Array
-- Different sorting algorithm
-- bit shift, xor, &gt;&gt;&gt;
-- multi dimensional ArrayList
-- computIfAbsent
-- compare function
-- generics
-- Iterator
-- TreeMap or TreeSet iterate reverse
-- Union Find
-- Detecting cycle
-- Strings functions
-- 
-- What is the difference in Senior and mid-level Developers?
-</rich_text>
-    <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
-    <rich_text>
+    <node name="Serialize and Deserialize Binary Tree" unique_id="20" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608027528" ts_lastsave="1608027551">
+      <rich_text>/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Codec {
 
-greenshot for print screen or image editing
-keepnote or cherrytree in linux
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        if(root == null) {
+            return "null";
+        }
+        String result = root.val + "," + serialize(root.left) + "," + serialize(root.right);
+        // System.out.println(result);
+        return result;
+    }
 
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        String[] nodevals =  data.split(",");
+        List&lt;String&gt; nodes = new LinkedList&lt;&gt;(Arrays.asList(nodevals));
+        
+        TreeNode result = deserialize(nodes);
+        return result;
+    }
+    
+     public TreeNode deserialize(List&lt;String&gt; data) {
+         
+         if(data.size() == 0) { return null; }
+         
+         if(data.get(0).equals("null")) {
+             data.remove(0);
+             return null;
+         } 
+         
+         TreeNode root = new TreeNode(Integer.parseInt(data.get(0)));
+         data.remove(0);
+         
+         root.left = deserialize(data);
+         root.right = deserialize(data);
+         
+         return root;
+     }
 
-Buy this course
-</rich_text>
-    <rich_text link="webs https://www.udemy.com/course/software-engineer-interview-unleashed/">https://www.udemy.com/course/software-engineer-interview-unleashed/</rich_text>
-  </node>
-  <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1607523368">
-    <node name="Pentesting" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326258" ts_lastsave="1607326260">
-      <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
-      <rich_text>
+}
 
-greenshot for print screen or image editing
-keepnote or cherrytree in linux
-</rich_text>
-    </node>
-    <node name="Open Banking, PSD2 and GDPR. FinTech" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326367" ts_lastsave="1607326385">
-      <rich_text link="webs https://www.udemy.com/course/a-course-on-api-and-open-banking-gdpr-by-piyush-singh/">https://www.udemy.com/course/a-course-on-api-and-open-banking-gdpr-by-piyush-singh/</rich_text>
-      <rich_text>
-
-</rich_text>
-    </node>
-    <node name="Java Multithreading, Concurrency &amp; Performance Optimization" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326453" ts_lastsave="1607326577">
-      <rich_text link="webs https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/">https://www.udemy.com/course/java-multithreading-concurrency-performance-optimization/</rich_text>
-    </node>
-    <node name="The Definitive Guide to Web Project Requirements Gathering" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326554" ts_lastsave="1607326560">
-      <rich_text link="webs https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/">https://www.udemy.com/course/how-to-start-a-web-project-the-right-way/</rich_text>
-    </node>
-    <node name="React Native" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607523368" ts_lastsave="1607523369">
-      <rich_text link="webs https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</rich_text>
+// Your Codec object will be instantiated and called as such:
+// Codec ser = new Codec();
+// Codec deser = new Codec();
+// TreeNode ans = deser.deserialize(ser.serialize(root));</rich_text>
     </node>
   </node>
 </cherrytree>
