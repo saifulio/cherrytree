@@ -100,7 +100,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608197679">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608305480">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -207,6 +207,9 @@ class Employee {
     <rich_text>
 - </rich_text>
     <rich_text underline="single" link="webs https://dzone.com/articles/component-load-testing" foreground="#1155cc">Building Blocks of a Scalable Architecture</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://docs.microsoft.com/en-us/azure/architecture/guide/">Azure Application Architecture Guide</rich_text>
     <rich_text>
 
 
@@ -1234,6 +1237,20 @@ interviewer relevant questions. Check out our:
 • </rich_text>
       <rich_text link="webs https://www.facebook.com/careers/life/engineering-leadership-at-facebook">Engineering Leadership at Facebook blog</rich_text>
     </node>
+  </node>
+  <node name="Product Design" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608296343" ts_lastsave="1608304521">
+    <rich_text>
+</rich_text>
+    <rich_text link="webs https://www.pathrise.com/guides/70-product-design-interview-questions-and-tips/" scale="h1">70 product design interview questions to nail your onsite</rich_text>
+    <rich_text>
+
+• </rich_text>
+    <rich_text link="webs https://medium.com/svilenk/the-1-000-floor-elevator-why-most-designers-fail-googles-infamous-interview-design-challenge-a5ff9ad91741">How would you design an elevator for a 1000 floor building?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text link="webs https://philip.greenspun.com/ancient-history/webmail/">Design an web based email service</rich_text>
+    <rich_text>
+</rich_text>
   </node>
   <node name="Leadership Principle" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607734074" ts_lastsave="1607734074"/>
   <node name="To Learn" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607317457" ts_lastsave="1607971298">
