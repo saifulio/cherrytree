@@ -100,7 +100,7 @@ class Employee {
 }</rich_text>
     </node>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608305480">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608358394">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -144,6 +144,22 @@ class Employee {
 - BloomFilter
    - BloomFilter Calculator
 - Count-min-sketch
+- </rich_text>
+    <rich_text link="webs https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election">Leader Election Pattern</rich_text>
+    <rich_text>
+   - </rich_text>
+    <rich_text link="webs https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/BullyExample.html">Bully Election Algorithm</rich_text>
+    <rich_text>
+   - </rich_text>
+    <rich_text link="webs https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/RingElectExample.html">Token Ring Election Algorithm</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker">Circuit Breaker</rich_text>
+    <rich_text>
+   - </rich_text>
+    <rich_text link="webs https://docs.microsoft.com/en-us/azure/architecture/patterns/retry">Retry pattern</rich_text>
+    <rich_text>
+- 
 
 
 </rich_text>
