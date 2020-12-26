@@ -112,7 +112,7 @@ class Employee {
 - start.spring.io
 - </rich_text>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608939458">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608988244">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -441,7 +441,7 @@ Scalability ─┤         ├─ Partitioning
 2. Constraints
 3. </rich_text>
     </node>
-    <node name="Interview LInks" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607979839" ts_lastsave="1607987348">
+    <node name="Interview Links" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607979839" ts_lastsave="1608973578">
       <rich_text scale="h2">Interviews</rich_text>
       <rich_text>
 1. </rich_text>
@@ -1275,6 +1275,37 @@ interviewer relevant questions. Check out our:
       <rich_text>
 • </rich_text>
       <rich_text link="webs https://www.facebook.com/careers/life/engineering-leadership-at-facebook">Engineering Leadership at Facebook blog</rich_text>
+    </node>
+    <node name="System Design - Storage" unique_id="25" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608973592" ts_lastsave="1608987882">
+      <rich_text link="webs https://medium.com/must-know-computer-science/system-desing-storage-d8ef4a8d952c">https://medium.com/must-know-computer-science/system-desing-storage-d8ef4a8d952c</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text link="webs https://www.colocationamerica.com/blog/what-is-raid-fault-tolerance">Raid Fault Tolarence</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text link="webs https://www.lamsade.dauphine.fr/~litwin/cours98/Doc-cours-clouds/raid6-intel.pdf">Intelligent RAID 6 TheoryOverview and Implementation</rich_text>
+      <rich_text>
+
+RAID 0: Striping
+RAID 1: Mirroring
+RAID 10: Mirroring + Striping
+RAID 5: Striping with parity
+RAID 6: Striping with double parity
+
+
+</rich_text>
+      <rich_text foreground="#1e1e9090ffff">Storage Pool:</rich_text>
+      <rich_text> A storage pool is a collection of physical disks. A storage pool enables storage aggregation, elastic capacity expansion, and delegated administration. From a storage pool, you can create one or more virtual disks. These virtual disks are also referred to as storage spaces.
+
+Volume:
+- Static Volume
+- Thin Volume
+- Thick Volume</rich_text>
+    </node>
+    <node name="Databse Scaling" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608988244" ts_lastsave="1608988245">
+      <rich_text link="webs https://www.freecodecamp.org/news/understanding-database-scaling-patterns/amp/">https://www.freecodecamp.org/news/understanding-database-scaling-patterns/amp/</rich_text>
     </node>
   </node>
   <node name="Product Design" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608296343" ts_lastsave="1608304521">
