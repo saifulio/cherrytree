@@ -112,7 +112,7 @@ class Employee {
 - start.spring.io
 - </rich_text>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608939458">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1609116492">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -250,7 +250,15 @@ class Employee {
 - </rich_text>
     <rich_text link="webs https://docs.microsoft.com/en-us/azure/architecture/guide/">Azure Application Architecture Guide</rich_text>
     <rich_text>
-
+- </rich_text>
+    <rich_text link="webs https://youtu.be/sNIvHttFjdI">Facebook design</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea">TAO - Facebook's distributed database system</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://kasunprageethdissanayake.medium.com/whatsapp-system-design-and-chat-messaging-architecture-part-1-29fb4f0d14af">Whatsapp System design</rich_text>
+    <rich_text>
 
 - </rich_text>
     <rich_text underline="single" link="webs https://avinetworks.com/what-is-load-balancing/" foreground="#1155cc">Load Balancing A-Z</rich_text>
