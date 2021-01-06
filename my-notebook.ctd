@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1609794011">
+  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1609913851">
     <rich_text scale="h3">Things to consider before submit:</rich_text>
     <rich_text>
 - Empty Array
@@ -143,6 +143,266 @@ public class SolutionTest{
 }
 </rich_text>
     </node>
+  </node>
+  <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1609915204">
+    <rich_text>• App </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">critique google maps and yelp</rich_text>
+    <rich_text> (5)
+   ◇ </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">If you have all the power that in xx company, what would you change? - App critique  </rich_text>
+    <rich_text>
+   ◇ </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique google maps
+   ◇ "what do you think they can do better?"  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How would you make an app that helps you decide which gift to buy?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">design a library book rental delivery app  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the VR/AR experience for zillow  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Choose the project you want to share today  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Design a scheduling app</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Past work presentation of 2 case studies. </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Portfolio based questions? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What made you get into design? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How did you handle a situation where you did not agree with the product direction?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What metrics signaled you to work on this problem?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about your past work and critique an app  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique a well known app/ product  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What problem did you solve with this project?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">what was the biggest failing of this project?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How did you measure success? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How comfortable am I with mathematics? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why are you transitioning from this position  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">App critique, what does X company want out of this app? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about yourself  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Would you consider relocating to Seattle? </rich_text>
+    <rich_text>(Interviewing for Menlo park)
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Yelp App - Many questions, but one was - The bookmarking icon was the same as the Collections icon - why do I think they made them the same icon?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you want to work here?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign a TV remote </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique an app on your phone.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">May you introduce one of your projects?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What do I like to do outside of work?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you think this feature was added? What would you improve? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How would you redesign a calendar app?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique the Youtube and Spotify app  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about your experience working in a cross-functional team</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critiquing YouTube video app.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Which product do you want to work for?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink the ATM</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique the yelp app
+• Redesign the atm. </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you want to work at facebook? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the ATM</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Everything about perfection and design process</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">App review. They let me choose which app I used the most and I chose Yelp. It was a free discussion between two designers not too much pressure.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about a time when you have had conflict in a project</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the ATM experience</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How would you make an app that helps you decide which gift to buy? 
+• What did you do at your previous job?
+• What does airbnb do? Why do you think they decided to change the search bar?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why did the APP do this? What's the business goal of this feature?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What team would you be interested in joining?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why did you make ______ design decision? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell us about your background? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">As a designer, what do you bring to the table?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink the ATM  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">what do you think of designing for iOS and Android? Should the design be different due to the platform differences? 
+• Show me more interaction designs.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique a mobile app
+• Walkthrough two projects in your portfolio  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign an alarm clock  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique an app</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What does design mean to you? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink an ATM.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How did you achieve this goal with your design decision?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the ATM  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink the ATM  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">They are fond of picking an app and "reviewing" it together.  </rich_text>
+    <rich_text>
+• T</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">ell me about your background, what makes you want to be a designer
+• What kinds of skills do you want to develop
+• Do you want to be an IC or manager </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you want to work at Facebook?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">One design challenge was the old 'redesign a TV remote'.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Choose an app that you like and use a lot, describe how you can redesign it and why.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Choose an app we both have an critique it.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Chose a well known app and critique it. What improvements could be made, how would you handle the design if you were to redo it, talk about the visual aesthetics, talk about skeuomorphic vs flat design, what would your process be etc.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">All the typical questions you've seen here: Why do you want to work at Facebook... They were looking for generalists... Portfolio review focusing on design decisions... Do an app review.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">During the app critique, the interviewer will ask what you notice that could use improvement, what you would change and specific reasons why your idea would be better than it currently stands.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why did you design this page this way?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What are you looking forward as the next step of your career?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">They really dug deep into my design thinking and reasons for decisions made in regard to my portfolio.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Think popular apps - airbnb, yelp, maps  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about [project from your portfolio]. What was the goal, what were the challenges, what was your specific role, etc. (The intent is to get a better understanding of your design work/process, intentionality, and overall awareness.)  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">how would you develop this further  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me the high level thinking behind your application  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What's your motivation to work?/ Facebook product designer is like a general list. It's combination of visual designer and ux designer. Within this spectrum, how do you want to define?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What would you fix if you got to lead the design team for X company?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Walk me through one of your projects </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">which Facebook product do you want to work for?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">The design challenge was meant to be a team effort with the interviewer, but I pretty much felt on my own.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Walk me through Google Maps. What works, what doesn't?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Asked to critique any iPhone app together during the onsite.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What other approaches did you try out in your projects?  </rich_text>
+    <rich_text>
+</rich_text>
   </node>
   <node name="JavaScript" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609346730" ts_lastsave="1609348053">
     <node name="Questions" unique_id="28" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609347920" ts_lastsave="1609349699">
@@ -2316,7 +2576,7 @@ keepnote or cherrytree in linux
       <rich_text link="webs https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</rich_text>
     </node>
   </node>
-  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1608027528">
+  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1609866683">
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
       <rich_text>public class TrieNode {
 	private HashMap&lt;Character, TrieNode&gt; children;
@@ -2574,5 +2834,41 @@ public class Codec {
 // Codec deser = new Codec();
 // TreeNode ans = deser.deserialize(ser.serialize(root));</rich_text>
     </node>
+  </node>
+  <node name="DevOps" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609866683" ts_lastsave="1609867745">
+    <rich_text>• BareIron in your own datacenter
+• cloud Infrastructure as a service like aws
+• Platform as a service
+• container based approach
+
+Orchestration platform
+- Docker Swarm
+- Kubernetes
+- Mesos
+
+1. Multiple hosts
+2. scaling
+3. Deployment
+4. Orchestration
+
+Private Container Services
+- Rancher
+- Google Cloud Platform
+- Amazon Elastic Container Service
+
+
+Habitat (application building cycle and application deploy cycle)
+
+Terraform allow you to use multiple cloud providers
+
+Juju
+
+Configuration management
+• Chef
+• Puppet
+• Ansible
+• Salt
+• CFEngine
+</rich_text>
   </node>
 </cherrytree>
