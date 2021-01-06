@@ -1449,7 +1449,15 @@ console.log(name);</codebox>
 - </rich_text>
     <rich_text link="webs https://docs.microsoft.com/en-us/azure/architecture/guide/">Azure Application Architecture Guide</rich_text>
     <rich_text>
-
+- </rich_text>
+    <rich_text link="webs https://youtu.be/sNIvHttFjdI">Facebook design</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://medium.com/coinmonks/tao-facebooks-distributed-database-for-social-graph-c2b45f5346ea">TAO - Facebook's distributed database system</rich_text>
+    <rich_text>
+- </rich_text>
+    <rich_text link="webs https://kasunprageethdissanayake.medium.com/whatsapp-system-design-and-chat-messaging-architecture-part-1-29fb4f0d14af">Whatsapp System design</rich_text>
+    <rich_text>
 
 - </rich_text>
     <rich_text underline="single" link="webs https://avinetworks.com/what-is-load-balancing/" foreground="#1155cc">Load Balancing A-Z</rich_text>
