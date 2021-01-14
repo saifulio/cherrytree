@@ -2843,7 +2843,7 @@ public class Codec {
 // TreeNode ans = deser.deserialize(ser.serialize(root));</rich_text>
     </node>
   </node>
-  <node name="DevOps" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609866683" ts_lastsave="1609867745">
+  <node name="DevOps" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609866683" ts_lastsave="1610556116">
     <rich_text>• BareIron in your own datacenter
 • cloud Infrastructure as a service like aws
 • Platform as a service
@@ -2878,5 +2878,79 @@ Configuration management
 • Salt
 • CFEngine
 </rich_text>
+    <node name="Docker" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610556116" ts_lastsave="1610585762">
+      <rich_text>Cheat Sheet
+
+docker run nginx
+- run a docker image
+
+docker run codersaif/nginx
+- download and run images from docker hub if not already downloaded
+
+docker ps
+- shows running containers
+
+docker ps -a
+- show all containers which are stopped as well
+
+docker stop {container_id | container_name}
+- to stop a running container
+
+docker rm {container_id | container_name}
+- to remove a stopped container
+
+docker images
+- show a list of images downloaded
+
+docker rmi nginx
+- to remove images completely from hdd (make sure, no images are running)
+
+docker pull nginx
+- to download a new image
+
+docker run nginx
+- pull and run a container
+
+docker  exec distracted_mcclintock cat /etc/hosts
+- to run a command in a particular containers
+
+
+docker run -d codersaif/node
+- to run the container in detached mode
+- You can start a docker container in detached mode with a -d option. So the container starts up and run in background. That means, you start up the container and could use the console after startup for other commands.
+
+docker attach a043d
+- to attach a detached container
+
+
+docker run -i kodekloud/simple-prompt-docker
+- to run it interactive mode
+
+docker run -it kodekloud/simple-prompt-docker
+- to show the prompt
+
+
+
+</rich_text>
+      <rich_text scale="h3">PORT mapping</rich_text>
+      <rich_text>
+docker run -p 80:5000 kodekloud/simple-webapp
+- mapping external 80 port to internal 5000 port
+
+</rich_text>
+      <rich_text scale="h3">FILE / DIRECTORY mapping</rich_text>
+      <rich_text>
+docker run -v /opt/datadir:/var/lib/mysql mysql
+- external directory (/opt/datadir) mapping with directory inside docker (/var/lib/mysql)
+
+</rich_text>
+      <rich_text scale="h3">Details about the container</rich_text>
+      <rich_text>
+docker inspect {container_id | name}
+- details about the container
+
+docker logs {container_id | name}
+- show logs about the container</rich_text>
+    </node>
   </node>
 </cherrytree>
