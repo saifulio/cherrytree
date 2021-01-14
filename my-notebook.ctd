@@ -2878,7 +2878,7 @@ Configuration management
 • Salt
 • CFEngine
 </rich_text>
-    <node name="Docker" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610556116" ts_lastsave="1610585762">
+    <node name="Docker" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610556116" ts_lastsave="1610620277">
       <rich_text>Cheat Sheet
 
 docker run nginx
@@ -2950,7 +2950,33 @@ docker inspect {container_id | name}
 - details about the container
 
 docker logs {container_id | name}
-- show logs about the container</rich_text>
+- show logs about the container
+
+</rich_text>
+      <rich_text scale="h3">Environment Variables</rich_text>
+      <rich_text>
+docker run -e APP_COLOR=blue simple-webapp-color
+- inside app (color = os.environ.get('APP_COLOR')), so it will take the environment variable and use it in the app
+
+Dockerfile
+Sample docker file to run a python server
+
+docker build Dockerfile -t codersaif/my-custom-app
+
+
+
+</rich_text>
+      <codebox char_offset="1893" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">FROM Ubuntu
+
+RUN apt-get update
+RUN apt-get install python
+
+RUN pip install flask
+RUN pip install flash-mysql
+
+COPY . /opt/source-code
+
+ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run</codebox>
     </node>
   </node>
 </cherrytree>
