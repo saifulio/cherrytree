@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1609913851">
+  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1610734000">
     <rich_text scale="h3">Things to consider before submit:</rich_text>
     <rich_text>
 - Empty Array
@@ -142,6 +142,127 @@ public class SolutionTest{
     }
 }
 </rich_text>
+    </node>
+    <node name="Spring Framework" unique_id="35" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610734000" ts_lastsave="1610734035">
+      <node name="Lombok" unique_id="36" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610734035" ts_lastsave="1610736072">
+        <rich_text scale="h3">Features</rich_text>
+        <rich_text>
+
+• </rich_text>
+        <rich_text weight="heavy">val</rich_text>
+        <rich_text> - local variables declared final
+• </rich_text>
+        <rich_text weight="heavy">var</rich_text>
+        <rich_text> - mutable local variables
+• @</rich_text>
+        <rich_text weight="heavy">NonNull</rich_text>
+        <rich_text> - Null check, will throw NPE if parameter is null
+• @</rich_text>
+        <rich_text weight="heavy">Cleanup</rich_text>
+        <rich_text> - Will call close() on resource in finally block
+
+• @</rich_text>
+        <rich_text weight="heavy">Getter</rich_text>
+        <rich_text> - Creates getter methods for all properties
+• @</rich_text>
+        <rich_text weight="heavy">Setter</rich_text>
+        <rich_text> - Creates setter for all non-final properties
+• @</rich_text>
+        <rich_text weight="heavy">ToString</rich_text>
+        <rich_text>
+• Generates String of classname, and each field separated by commas
+• Optional parameter to include field names
+• Optional parameter to include call to the super toString method
+
+• @</rich_text>
+        <rich_text weight="heavy">EqualsAndHashCode</rich_text>
+        <rich_text>
+• Generates implementations of equals(Object other) and hashCode()
+• By default will use all non-static, non-transient properties
+• Can optionally exclude specific properties
+
+• @</rich_text>
+        <rich_text weight="heavy">NoArgsConstructor</rich_text>
+        <rich_text>
+• Generates no args constructor
+• Will cause compiler error if there are final fields
+• Can optionally force, which will initialize final fields with 0 / false / null
+• @</rich_text>
+        <rich_text weight="heavy">RequiredArgsContructor</rich_text>
+        <rich_text>
+• Generates a constructor for all fields that are final or marked @NonNull
+• Constructor will throw a NullPointerException if any @NonNull fields are null
+
+• @</rich_text>
+        <rich_text weight="heavy">AllArgsConstructor</rich_text>
+        <rich_text>
+• Generates a constructor for all properties of class
+• Any @NotNull properties will have null checks
+• @</rich_text>
+        <rich_text weight="heavy">Data</rich_text>
+        <rich_text>
+• Generates typical boilerplate code for POJOs
+• Combines - @Getter, @Setter, @ToString, @EqualsAndHashCode, @RequiredArgsConstructor
+• No constructor is generated if constructors have been explicitly declared
+
+• @</rich_text>
+        <rich_text weight="heavy">Value</rich_text>
+        <rich_text>
+• The immutable variant of @Data
+• All fields are made private and final by default
+• @</rich_text>
+        <rich_text weight="heavy">NonNull</rich_text>
+        <rich_text>
+• Set on parameter of method or constructor and a NullPointerException will be thrown if parameter is null
+
+• @</rich_text>
+        <rich_text weight="heavy">Builder</rich_text>
+        <rich_text>
+• Implements the ‘builder’ pattern for object creation
+• Person.builder().name("Adam Savage").city("San Francisco").job("Mythbusters").job("Unchained Reaction”).build();
+• @</rich_text>
+        <rich_text weight="heavy">SneakyThrows</rich_text>
+        <rich_text>
+• Throw checked exceptions without declaring in calling method’s throws clause
+• @</rich_text>
+        <rich_text weight="heavy">Syncronized</rich_text>
+        <rich_text>
+• A safer implementation of Java’s synchronized
+
+
+• @</rich_text>
+        <rich_text weight="heavy">Getter(lazy = true)</rich_text>
+        <rich_text> - for expensive getters
+• Will calculate value first time and cache
+• Additional gets will read from cache
+• @</rich_text>
+        <rich_text weight="heavy">Log</rich_text>
+        <rich_text> - Creates a Java util logger - Java util loggers are awful
+• @</rich_text>
+        <rich_text weight="heavy">Slf4j</rich_text>
+        <rich_text> - Creates a SLF4J logger.
+• Recommended - SLF4J is a generic logging facade
+• Spring Boot’s default logger is LogBack
+
+
+</rich_text>
+        <rich_text foreground="#e8bf6a">&lt;dependency&gt;
+   &lt;groupId&gt;</rich_text>
+        <rich_text>org.projectlombok</rich_text>
+        <rich_text foreground="#e8bf6a">&lt;/groupId&gt;
+   &lt;artifactId&gt;</rich_text>
+        <rich_text>lombok</rich_text>
+        <rich_text foreground="#e8bf6a">&lt;/artifactId&gt;
+&lt;/dependency&gt;</rich_text>
+        <rich_text>
+
+update Maven 
+
+IntelliJ -&gt; Settings -&gt; plugin -&gt; Lombok (Install)
+
+Refactor -&gt; Lombok -&gt; @ToString ( To add Annotations )
+Refactor -&gt; Delombok -&gt; @ToString (To generate code)</rich_text>
+      </node>
     </node>
   </node>
   <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1609915204">
@@ -2960,7 +3081,9 @@ docker run -e APP_COLOR=blue simple-webapp-color
 
 Dockerfile
 Sample docker file to run a python server
-
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
 docker build Dockerfile -t codersaif/my-custom-app
 
 
