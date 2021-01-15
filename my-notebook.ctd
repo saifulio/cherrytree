@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1609794011">
+  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1610734000">
     <rich_text scale="h3">Things to consider before submit:</rich_text>
     <rich_text>
 - Empty Array
@@ -143,6 +143,387 @@ public class SolutionTest{
 }
 </rich_text>
     </node>
+    <node name="Spring Framework" unique_id="35" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610734000" ts_lastsave="1610734035">
+      <node name="Lombok" unique_id="36" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610734035" ts_lastsave="1610736072">
+        <rich_text scale="h3">Features</rich_text>
+        <rich_text>
+
+• </rich_text>
+        <rich_text weight="heavy">val</rich_text>
+        <rich_text> - local variables declared final
+• </rich_text>
+        <rich_text weight="heavy">var</rich_text>
+        <rich_text> - mutable local variables
+• @</rich_text>
+        <rich_text weight="heavy">NonNull</rich_text>
+        <rich_text> - Null check, will throw NPE if parameter is null
+• @</rich_text>
+        <rich_text weight="heavy">Cleanup</rich_text>
+        <rich_text> - Will call close() on resource in finally block
+
+• @</rich_text>
+        <rich_text weight="heavy">Getter</rich_text>
+        <rich_text> - Creates getter methods for all properties
+• @</rich_text>
+        <rich_text weight="heavy">Setter</rich_text>
+        <rich_text> - Creates setter for all non-final properties
+• @</rich_text>
+        <rich_text weight="heavy">ToString</rich_text>
+        <rich_text>
+• Generates String of classname, and each field separated by commas
+• Optional parameter to include field names
+• Optional parameter to include call to the super toString method
+
+• @</rich_text>
+        <rich_text weight="heavy">EqualsAndHashCode</rich_text>
+        <rich_text>
+• Generates implementations of equals(Object other) and hashCode()
+• By default will use all non-static, non-transient properties
+• Can optionally exclude specific properties
+
+• @</rich_text>
+        <rich_text weight="heavy">NoArgsConstructor</rich_text>
+        <rich_text>
+• Generates no args constructor
+• Will cause compiler error if there are final fields
+• Can optionally force, which will initialize final fields with 0 / false / null
+• @</rich_text>
+        <rich_text weight="heavy">RequiredArgsContructor</rich_text>
+        <rich_text>
+• Generates a constructor for all fields that are final or marked @NonNull
+• Constructor will throw a NullPointerException if any @NonNull fields are null
+
+• @</rich_text>
+        <rich_text weight="heavy">AllArgsConstructor</rich_text>
+        <rich_text>
+• Generates a constructor for all properties of class
+• Any @NotNull properties will have null checks
+• @</rich_text>
+        <rich_text weight="heavy">Data</rich_text>
+        <rich_text>
+• Generates typical boilerplate code for POJOs
+• Combines - @Getter, @Setter, @ToString, @EqualsAndHashCode, @RequiredArgsConstructor
+• No constructor is generated if constructors have been explicitly declared
+
+• @</rich_text>
+        <rich_text weight="heavy">Value</rich_text>
+        <rich_text>
+• The immutable variant of @Data
+• All fields are made private and final by default
+• @</rich_text>
+        <rich_text weight="heavy">NonNull</rich_text>
+        <rich_text>
+• Set on parameter of method or constructor and a NullPointerException will be thrown if parameter is null
+
+• @</rich_text>
+        <rich_text weight="heavy">Builder</rich_text>
+        <rich_text>
+• Implements the ‘builder’ pattern for object creation
+• Person.builder().name("Adam Savage").city("San Francisco").job("Mythbusters").job("Unchained Reaction”).build();
+• @</rich_text>
+        <rich_text weight="heavy">SneakyThrows</rich_text>
+        <rich_text>
+• Throw checked exceptions without declaring in calling method’s throws clause
+• @</rich_text>
+        <rich_text weight="heavy">Syncronized</rich_text>
+        <rich_text>
+• A safer implementation of Java’s synchronized
+
+
+• @</rich_text>
+        <rich_text weight="heavy">Getter(lazy = true)</rich_text>
+        <rich_text> - for expensive getters
+• Will calculate value first time and cache
+• Additional gets will read from cache
+• @</rich_text>
+        <rich_text weight="heavy">Log</rich_text>
+        <rich_text> - Creates a Java util logger - Java util loggers are awful
+• @</rich_text>
+        <rich_text weight="heavy">Slf4j</rich_text>
+        <rich_text> - Creates a SLF4J logger.
+• Recommended - SLF4J is a generic logging facade
+• Spring Boot’s default logger is LogBack
+
+
+</rich_text>
+        <rich_text foreground="#e8bf6a">&lt;dependency&gt;
+   &lt;groupId&gt;</rich_text>
+        <rich_text>org.projectlombok</rich_text>
+        <rich_text foreground="#e8bf6a">&lt;/groupId&gt;
+   &lt;artifactId&gt;</rich_text>
+        <rich_text>lombok</rich_text>
+        <rich_text foreground="#e8bf6a">&lt;/artifactId&gt;
+&lt;/dependency&gt;</rich_text>
+        <rich_text>
+
+update Maven 
+
+IntelliJ -&gt; Settings -&gt; plugin -&gt; Lombok (Install)
+
+Refactor -&gt; Lombok -&gt; @ToString ( To add Annotations )
+Refactor -&gt; Delombok -&gt; @ToString (To generate code)</rich_text>
+      </node>
+    </node>
+  </node>
+  <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1609915204">
+    <rich_text>• App </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">critique google maps and yelp</rich_text>
+    <rich_text> (5)
+   ◇ </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">If you have all the power that in xx company, what would you change? - App critique  </rich_text>
+    <rich_text>
+   ◇ </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique google maps
+   ◇ "what do you think they can do better?"  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How would you make an app that helps you decide which gift to buy?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">design a library book rental delivery app  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the VR/AR experience for zillow  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Choose the project you want to share today  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Design a scheduling app</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Past work presentation of 2 case studies. </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Portfolio based questions? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What made you get into design? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How did you handle a situation where you did not agree with the product direction?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What metrics signaled you to work on this problem?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about your past work and critique an app  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique a well known app/ product  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What problem did you solve with this project?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">what was the biggest failing of this project?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How did you measure success? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How comfortable am I with mathematics? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why are you transitioning from this position  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">App critique, what does X company want out of this app? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about yourself  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Would you consider relocating to Seattle? </rich_text>
+    <rich_text>(Interviewing for Menlo park)
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Yelp App - Many questions, but one was - The bookmarking icon was the same as the Collections icon - why do I think they made them the same icon?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you want to work here?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign a TV remote </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique an app on your phone.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">May you introduce one of your projects?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What do I like to do outside of work?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you think this feature was added? What would you improve? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How would you redesign a calendar app?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique the Youtube and Spotify app  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about your experience working in a cross-functional team</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critiquing YouTube video app.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Which product do you want to work for?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink the ATM</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique the yelp app
+• Redesign the atm. </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you want to work at facebook? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the ATM</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Everything about perfection and design process</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">App review. They let me choose which app I used the most and I chose Yelp. It was a free discussion between two designers not too much pressure.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about a time when you have had conflict in a project</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the ATM experience</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How would you make an app that helps you decide which gift to buy? 
+• What did you do at your previous job?
+• What does airbnb do? Why do you think they decided to change the search bar?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why did the APP do this? What's the business goal of this feature?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What team would you be interested in joining?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why did you make ______ design decision? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell us about your background? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">As a designer, what do you bring to the table?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink the ATM  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">what do you think of designing for iOS and Android? Should the design be different due to the platform differences? 
+• Show me more interaction designs.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique a mobile app
+• Walkthrough two projects in your portfolio  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign an alarm clock  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Critique an app</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What does design mean to you? </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink an ATM.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">How did you achieve this goal with your design decision?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Redesign the ATM  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Rethink the ATM  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">They are fond of picking an app and "reviewing" it together.  </rich_text>
+    <rich_text>
+• T</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">ell me about your background, what makes you want to be a designer
+• What kinds of skills do you want to develop
+• Do you want to be an IC or manager </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why do you want to work at Facebook?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">One design challenge was the old 'redesign a TV remote'.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Choose an app that you like and use a lot, describe how you can redesign it and why.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Choose an app we both have an critique it.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Chose a well known app and critique it. What improvements could be made, how would you handle the design if you were to redo it, talk about the visual aesthetics, talk about skeuomorphic vs flat design, what would your process be etc.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">All the typical questions you've seen here: Why do you want to work at Facebook... They were looking for generalists... Portfolio review focusing on design decisions... Do an app review.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">During the app critique, the interviewer will ask what you notice that could use improvement, what you would change and specific reasons why your idea would be better than it currently stands.</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Why did you design this page this way?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What are you looking forward as the next step of your career?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">They really dug deep into my design thinking and reasons for decisions made in regard to my portfolio.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Think popular apps - airbnb, yelp, maps  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me about [project from your portfolio]. What was the goal, what were the challenges, what was your specific role, etc. (The intent is to get a better understanding of your design work/process, intentionality, and overall awareness.)  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">how would you develop this further  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Tell me the high level thinking behind your application  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What's your motivation to work?/ Facebook product designer is like a general list. It's combination of visual designer and ux designer. Within this spectrum, how do you want to define?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What would you fix if you got to lead the design team for X company?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Walk me through one of your projects </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">which Facebook product do you want to work for?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">The design challenge was meant to be a team effort with the interviewer, but I pretty much felt on my own.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Walk me through Google Maps. What works, what doesn't?  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">Asked to critique any iPhone app together during the onsite.  </rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text justification="left" scale="h3" foreground="#404040">What other approaches did you try out in your projects?  </rich_text>
+    <rich_text>
+</rich_text>
   </node>
   <node name="JavaScript" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609346730" ts_lastsave="1610069481">
     <node name="Questions" unique_id="28" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609347920" ts_lastsave="1609349699">
@@ -2327,7 +2708,7 @@ keepnote or cherrytree in linux
       <rich_text link="webs https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</rich_text>
     </node>
   </node>
-  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1608027528">
+  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1609866683">
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
       <rich_text>public class TrieNode {
 	private HashMap&lt;Character, TrieNode&gt; children;
@@ -2585,5 +2966,232 @@ public class Codec {
 // Codec deser = new Codec();
 // TreeNode ans = deser.deserialize(ser.serialize(root));</rich_text>
     </node>
+  </node>
+  <node name="DevOps" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609866683" ts_lastsave="1610631091">
+    <rich_text>• BareIron in your own datacenter
+• cloud Infrastructure as a service like aws
+• Platform as a service
+• container based approach
+
+Orchestration platform
+- Docker Swarm
+- Kubernetes
+- Mesos
+
+1. Multiple hosts
+2. scaling
+3. Deployment
+4. Orchestration
+
+Private Container Services
+- Rancher
+- Google Cloud Platform
+- Amazon Elastic Container Service
+
+
+Habitat (application building cycle and application deploy cycle)
+
+Terraform allow you to use multiple cloud providers
+
+Juju
+
+Configuration management
+• Chef
+• Puppet
+• Ansible
+• Salt
+• CFEngine
+</rich_text>
+    <node name="Docker" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610556116" ts_lastsave="1610620277">
+      <rich_text>Cheat Sheet
+
+docker run nginx
+- run a docker image
+
+docker run codersaif/nginx
+- download and run images from docker hub if not already downloaded
+
+docker ps
+- shows running containers
+
+docker ps -a
+- show all containers which are stopped as well
+
+docker stop {container_id | container_name}
+- to stop a running container
+
+docker rm {container_id | container_name}
+- to remove a stopped container
+
+docker images
+- show a list of images downloaded
+
+docker rmi nginx
+- to remove images completely from hdd (make sure, no images are running)
+
+docker pull nginx
+- to download a new image
+
+docker run nginx
+- pull and run a container
+
+docker  exec distracted_mcclintock cat /etc/hosts
+- to run a command in a particular containers
+
+
+docker run -d codersaif/node
+- to run the container in detached mode
+- You can start a docker container in detached mode with a -d option. So the container starts up and run in background. That means, you start up the container and could use the console after startup for other commands.
+
+docker attach a043d
+- to attach a detached container
+
+
+docker run -i kodekloud/simple-prompt-docker
+- to run it interactive mode
+
+docker run -it kodekloud/simple-prompt-docker
+- to show the prompt
+
+
+
+</rich_text>
+      <rich_text scale="h3">PORT mapping</rich_text>
+      <rich_text>
+docker run -p 80:5000 kodekloud/simple-webapp
+- mapping external 80 port to internal 5000 port
+
+</rich_text>
+      <rich_text scale="h3">FILE / DIRECTORY mapping</rich_text>
+      <rich_text>
+docker run -v /opt/datadir:/var/lib/mysql mysql
+- external directory (/opt/datadir) mapping with directory inside docker (/var/lib/mysql)
+
+</rich_text>
+      <rich_text scale="h3">Details about the container</rich_text>
+      <rich_text>
+docker inspect {container_id | name}
+- details about the container
+
+docker logs {container_id | name}
+- show logs about the container
+
+</rich_text>
+      <rich_text scale="h3">Environment Variables</rich_text>
+      <rich_text>
+docker run -e APP_COLOR=blue simple-webapp-color
+- inside app (color = os.environ.get('APP_COLOR')), so it will take the environment variable and use it in the app
+
+Dockerfile
+Sample docker file to run a python server
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
+docker build Dockerfile -t codersaif/my-custom-app
+
+
+
+</rich_text>
+      <codebox char_offset="1893" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">FROM Ubuntu
+
+RUN apt-get update
+RUN apt-get install python
+
+RUN pip install flask
+RUN pip install flash-mysql
+
+COPY . /opt/source-code
+
+ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run</codebox>
+    </node>
+  </node>
+  <node name="Behavioral Questions" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610631091" ts_lastsave="1610641674">
+    <rich_text scale="h2">THE STAR METHOD</rich_text>
+    <rich_text>
+The STAR method is a structured manner of responding to a behavioral-based interview question by
+discussing the specific situation, task, action, and result of the situation you are describing.
+
+</rich_text>
+    <rich_text weight="heavy">Situation</rich_text>
+    <rich_text>: Describe the situation that you were in or the task that you needed to accomplish. You
+must describe a specific event or situation, not a generalized description of what you have done in
+the past. Be sure to give enough detail for the interviewer to understand. This situation can be
+from a previous job, from a volunteer experience, or any relevant event.
+
+</rich_text>
+    <rich_text weight="heavy">Task</rich_text>
+    <rich_text>: What goal were you working toward?
+
+</rich_text>
+    <rich_text weight="heavy">Action</rich_text>
+    <rich_text>: Describe the actions you took to address the situation with an appropriate amount of
+detail and keep the focus on YOU. What specific steps did you take and what was your particular
+contribution? Be careful that you don’t describe what the team or group did when talking about a
+project, but what you actually did. Use the word “I,” not “we” when describing actions.
+
+</rich_text>
+    <rich_text weight="heavy">Result</rich_text>
+    <rich_text>: Describe the outcome of your actions and don’t be shy about taking credit for your
+behavior. What happened? How did the event end? What did you accomplish? What did you
+learn? Make sure your answer contains multiple positive results.
+Make sure that you follow all parts of the STAR method. Be as specific as possible at all times, without
+rambling or including too much information. Oftentimes students have to be prompted to include their
+results, so try to include that without being asked. Also, eliminate any examples that do not paint you in a
+positive light. However, keep in mind that some examples that have a negative result (such as “lost the
+game”) can highlight your strengths in the face of adversity.
+
+</rich_text>
+    <rich_text scale="h3">SAMPLE STAR RESPONSE:</rich_text>
+    <rich_text>
+Situation (S): Advertising revenue was falling off for my college newspaper, The Review, and
+large numbers of long-term advertisers were not renewing contracts.
+Task (T): My goal was to generate new ideas, materials and incentives that would result in at
+least a 15% increase in advertisers from the year before.
+Action (A): I designed a new promotional packet to go with the rate sheet and compared the
+benefits of The Review circulation with other ad media in the area. I also set-up a special training
+session for the account executives with a School of Business Administration professor who
+discussed competitive selling strategies.
+Result (R): We signed contracts with 15 former advertisers for daily ads and five for special
+supplements. We increased our new advertisers by 20 percent over the same period last year.
+
+</rich_text>
+    <rich_text scale="h3">HOW TO PREPARE FOR A BEHAVIORAL INTERVIEW</rich_text>
+    <rich_text>
+• Recall recent situations that show favorable behaviors or actions, especially involving course work, work experience, leadership, teamwork, initiative, planning, and customer service.
+• Prepare short descriptions of each situation; be ready to give details if asked.
+• Be sure each story has a beginning, middle, and an end, i.e., be ready to describe the situation, including the task at hand, your action, and the outcome or result.
+• Be sure the outcome or result reflects positively on you (even if the result itself was not favorable).
+• Be honest. Don't embellish or omit any part of the story. The interviewer will find out if your story is built on a weak foundation.
+• Be specific. Don't generalize about several events; give a detailed accounting of one event.
+• Vary your examples; don’t take them all from just one area of your life. 
+
+</rich_text>
+    <rich_text scale="h3">SAMPLE BEHAVIORAL INTERVIEW QUESTIONS</rich_text>
+    <rich_text>
+Practice using the STAR Method on these common behavioral interviewing questions:
+• Describe a situation in which you were able to use persuasion to successfully convince someone to see things your way.
+• Describe a time when you were faced with a stressful situation that demonstrated your coping skills.
+• Give me a specific example of a time when you used good judgment and logic in solving a problem.
+• Give me an example of a time when you set a goal and were able to meet or achieve it.
+• Tell me about a time when you had to use your presentation skills to influence someone's opinion.
+• Give me a specific example of a time when you had to conform to a policy with which you did not agree.
+• Please discuss an important written document you were required to complete.
+• Tell me about a time when you had to go above and beyond the call of duty in order to get a job done.
+• Tell me about a time when you had too many things to do and you were required to prioritize your tasks.
+• Give me an example of a time when you had to make a split second decision.
+• What is your typical way of dealing with conflict? Give me an example.
+• Tell me about a time you were able to successfully deal with another person even when that individual may not have personally liked you (or vice versa).
+• Tell me about a difficult decision you've made in the last year.
+• Give me an example of a time when something you tried to accomplish and failed.
+• Give me an example of when you showed initiative and took the lead.
+• Tell me about a recent situation in which you had to deal with a very upset customer or coworker.
+• Give me an example of a time when you motivated others.
+• Tell me about a time when you delegated a project effectively.
+• Give me an example of a time when you used your fact-finding skills to solve a problem.
+• Tell me about a time when you missed an obvious solution to a problem.
+• Describe a time when you anticipated potential problems and developed preventive measures.
+• Tell me about a time when you were forced to make an unpopular decision.
+• Please tell me about a time you had to fire a friend.
+• Describe a time when you set your sights too high (or too low).</rich_text>
   </node>
 </cherrytree>
