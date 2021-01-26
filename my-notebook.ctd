@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1610734000">
+  <node name="Arbitrary" unique_id="37" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611550905" ts_lastsave="1611551119">
+    <node name="knex migrations" unique_id="38" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611551116" ts_lastsave="1611551122">
+      <rich_text>knex migrations
+
+exports.up
+exports.down
+
+both functions needed
+1 is for update
+1 is for downgrade or going back.
+
+
+sample:
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
+
+Also filename should be timestamp_the_changes</rich_text>
+      <codebox char_offset="124" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="js" highlight_brackets="1" show_line_numbers="0">exports.up = function (knex) {
+    return knex.schema.table('users', table =&gt; {
+        table.string('salt').notNullable();
+    });
+};
+
+exports.down = function (knex) {
+    return knex.schema.table('users', table =&gt; {
+        table.dropColumn('salt');
+    })
+};
+</codebox>
+    </node>
+  </node>
+  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1611550915">
     <rich_text scale="h3">Things to consider before submit:</rich_text>
     <rich_text>
 - Empty Array
