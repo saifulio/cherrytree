@@ -2715,7 +2715,7 @@ Buy this course
 </rich_text>
     <rich_text link="webs https://www.udemy.com/course/software-engineer-interview-unleashed/">https://www.udemy.com/course/software-engineer-interview-unleashed/</rich_text>
   </node>
-  <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1607523368">
+  <node name="Tutorial continue" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326229" ts_lastsave="1611864145">
     <node name="Pentesting" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607326258" ts_lastsave="1607326260">
       <rich_text link="webs https://www.youtube.com/watch?v=3Kq1MIfTWCE">https://www.youtube.com/watch?v=3Kq1MIfTWCE</rich_text>
       <rich_text>
@@ -2738,6 +2738,36 @@ keepnote or cherrytree in linux
     </node>
     <node name="React Native" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607523368" ts_lastsave="1607523369">
       <rich_text link="webs https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</rich_text>
+    </node>
+  </node>
+  <node name="Full Stack" unique_id="42" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611864145" ts_lastsave="1611864155">
+    <node name="React-Redux" unique_id="43" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611864155" ts_lastsave="1611943592">
+      <rich_text>• What is Redux ? 
+   ◇ Redux is a predictable state container for Javascript apps.
+• What is a Reducer ? 
+   ◇ Reducer is a function which decides what to do on each action type. first argument is state and 2nd argument is action
+• What is action?
+   ◇ action are sent from view to store. like, store.dispatch({type: ‘NEW_ACTION’})
+   ◇ This action triggers store to change state if necessary.
+• What is redux toolkit ? 
+
+
+
+</rich_text>
+      <rich_text underline="single">keywords</rich_text>
+      <rich_text>
+createStore 				=&gt; to create store from reducers
+store							=&gt; 
+reducers
+combineReducers		=&gt; to combine multiple reducers into a single reducers
+dispatch						=&gt; 
+action						=&gt; 
+	type
+	payload
+subscribe
+connect
+mapStateToProps
+mapDispatchToProps</rich_text>
     </node>
   </node>
   <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1609866683">
@@ -2999,7 +3029,7 @@ public class Codec {
 // TreeNode ans = deser.deserialize(ser.serialize(root));</rich_text>
     </node>
   </node>
-  <node name="DevOps" unique_id="39" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609866683" ts_lastsave="1611640756">
+  <node name="DevOps" unique_id="39" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609866683" ts_lastsave="1611943656">
     <rich_text>• BareIron in your own datacenter
 • cloud Infrastructure as a service like aws
 • Platform as a service
@@ -3139,15 +3169,108 @@ ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run</codebox>
     <node name="Docker-compose" unique_id="40" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611640756" ts_lastsave="1611641806">
       <rich_text>wait-for script
 
-
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
 
 </rich_text>
       <codebox char_offset="17" justification="left" frame_width="500" frame_height="75" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">ADD https://raw.githubusercontent.com/mrako/wait-for/master/wait-for /wait-for
 RUN chmod +x /wait-for
 CMD sh -c '/wait-for mysql-db:3306 -- sequelize db:migrate &amp;&amp; nodemon index.js'</codebox>
     </node>
+    <node name="aws" unique_id="41" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611768949" ts_lastsave="1611769029">
+      <rich_text>Get all the credentials </rich_text>
+      <rich_text link="webs https://console.aws.amazon.com/iam/home?region=ap-southeast-1#/security_credentials">here</rich_text>
+      <rich_text>:
+
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
+
+</rich_text>
+      <codebox char_offset="31" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">$ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Default region name [None]: us-west-2
+Default output format [None]: ENTER</codebox>
+    </node>
+    <node name="Kubernetes" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611943656" ts_lastsave="1611948138">
+      <rich_text>• High Availability
+• Scalability
+• Disaster recovery
+
+• k8s doesn't manage any data persistance
+• DB can't be replicated via deployment
+• Avoid data inconsistencies
+• Deployment is for stateLess apps
+• StatefulSet for statefulSet Apps or databases
+
+• Node - can have multiple pods
+• Pod - should contain 1 application container
+   ◇ Smallest unit of k8s
+   ◇ Abstraction over container
+   ◇ Usually 1 application per pod
+   ◇ Each pod gets its own ip address
+   ◇ New IP address on re-creation
+• Service
+   ◇ Permanent IP address
+   ◇  External service
+   ◇  Internal service
+   ◇  Service is also a load balancer
+   ◇ is the way to communicate among nodes
+• Ingress
+   ◇ for having https and real domain (without any port)
+• rs
+• ConfigMap
+   ◇ External configuration of your application
+• Secret
+   ◇ Just like config map but for secret data
+      ▪ credentials
+      ▪ passwords
+      ▪ certificate
+• Volumes 
+   ◇ Data storage
+   ◇ Could be local or remote (outside of k8s cluster)
+• StatefulSet
+   ◇ for stateful apps
+      ▪ mysql
+      ▪ mongodb
+      ▪ elastic search
+• Pod blueprint
+   ◇ Deployment
+   ◇ StatefulSet
+
+
+• Container runtime
+   ◇ Docker
+• Kubelet
+   ◇ stays inside node
+   ◇ interacts with both the container and the node
+   ◇ starts the pod with a container inside
+• kube proxy
+   ◇ forwards the requests from service to pod
+
+</rich_text>
+      <rich_text weight="heavy">• Master Nodes</rich_text>
+      <rich_text>
+   ◇ API serverr
+      ▪ Cluster gateway
+      ▪ acts as a gatekeeper for authentication
+   ◇ Scheduler
+      ▪ where to put the pod
+   ◇ Controller manager
+      ▪ Detects cluster state changes
+      ▪ makes a request to scheduler and it decides where to create the new pod
+   ◇ etcd
+      ▪ key value store
+         - Is the cluster healthy ?
+         - What resources are available?
+         - Did the cluster state change ?
+      ▪ cluster brain
+      ▪ cluster chagnes get stored in the key value store</rich_text>
+    </node>
   </node>
-  <node name="Behavioral Questions" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610631091" ts_lastsave="1610641674">
+  <node name="Behavioral Questions" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610631091" ts_lastsave="1611955341">
     <rich_text scale="h2">THE STAR METHOD</rich_text>
     <rich_text>
 The STAR method is a structured manner of responding to a behavioral-based interview question by
@@ -3235,5 +3358,55 @@ Practice using the STAR Method on these common behavioral interviewing questions
 • Tell me about a time when you were forced to make an unpopular decision.
 • Please tell me about a time you had to fire a friend.
 • Describe a time when you set your sights too high (or too low).</rich_text>
+  </node>
+  <node name="API Design" unique_id="45" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611955341" ts_lastsave="1611961520">
+    <rich_text>Cart
+Question: Is this supposed to be a backend design or frontend design or both? 
+Status code ?
+- add product (amount, attributes)
+- remove product 
+- update product (amount, attributes)
+- delete cart
+- order cart
+- gift (no price tag)
+- load cart localStorage
+- save cart localStorage
+- send to backend 
+
+
+- How many stocks left, how many times left
+- Abandoned cart bounce rate
+   → Delivery charge 
+   → Tax + vat 
+   → 
+
+Order
+- billing address 
+- shipping address
+
+
+Cart {
+List&lt;product&gt; products
+
+addProduct()
+removeProduct()
+List&lt;products&gt; details()
+int cartAmount()
+updateApi()
+}</rich_text>
+    <node name="API design best practices" unique_id="46" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611961520" ts_lastsave="1611962660">
+      <rich_text>1. Don't expose your database schema in the response of your api endpoint
+2. Don't expose the id's of your records if you can help it. (security issue) so that someone who is using can't alter the id
+3. Try and use https whereever you can (token, bearer token, passwords)
+4. ?? Explaining other api endpoints in the response, so that customer can use other related apis
+5. API versioning: 
+6. HTTP status code
+7. Rate limits
+8. Throtlling
+9. Authentication
+10. Authorization
+11. Documentation
+</rich_text>
+    </node>
   </node>
 </cherrytree>
