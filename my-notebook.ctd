@@ -33,7 +33,7 @@ exports.down = function (knex) {
 </codebox>
     </node>
   </node>
-  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1612166023">
+  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1612175338">
     <rich_text scale="h3">Things to consider before submit:</rich_text>
     <rich_text>
 - Empty Array
@@ -87,6 +87,19 @@ Monday 4th january
     <rich_text>
 </rich_text>
     <rich_text justification="left"></rich_text>
+    <rich_text>
+
+
+
+order
+notification
+idempotent
+
+</rich_text>
+    <rich_text foreground="#d4d4d4">training_details</rich_text>
+    <rich_text>
+
+</rich_text>
     <codebox char_offset="440" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="java" highlight_brackets="1" show_line_numbers="0">class Solution {
     public int maximumWealth(int[][] accounts) {
         
@@ -341,75 +354,54 @@ Refactor -&gt; Lombok -&gt; @ToString ( To add Annotations )
 Refactor -&gt; Delombok -&gt; @ToString (To generate code)</rich_text>
       </node>
     </node>
-    <node name="CheatSheet" unique_id="56" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612166023" ts_lastsave="1612166606">
-      <rich_text scale="h2">Declaring data structures:</rich_text>
-      <rich_text>
+    <node name="CheatSheet" unique_id="56" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#ff0000" ts_creation="1612166023" ts_lastsave="1612290297">
+      <rich_text>// Declaring data structures:
 
-Deque&lt;Integer&gt; dq = </rich_text>
-      <rich_text foreground="#cc7832">new </rich_text>
-      <rich_text>LinkedList&lt;&gt;()</rich_text>
-      <rich_text foreground="#cc7832">;</rich_text>
-      <rich_text>
-peek()
-poll()
-peekFirst()
-pollFirst()
-peekLast();
-pollLast();
-removeFirst();
-removeLast();
+Deque&lt;Integer&gt; dq = new LinkedList&lt;&gt;();
+dq.peek();
+dq.poll();
+dq.peekFirst();
+dq.pollFirst();
+dq.peekLast();
+dq.pollLast();
+dq.removeFirst();
+dq.removeLast();
 
-PriorityQueue&lt;Integer&gt; pq = </rich_text>
-      <rich_text foreground="#cc7832">new </rich_text>
-      <rich_text>PriorityQueue&lt;&gt;((a,b)-&gt;b-a)</rich_text>
-      <rich_text foreground="#cc7832">;</rich_text>
-      <rich_text>
-peek();
-poll();
+PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;&gt;((a,b)-&gt;b-a);
+pq.peek();
+pq.poll();
 
-HashMap&lt;String</rich_text>
-      <rich_text foreground="#cc7832">, </rich_text>
-      <rich_text>Integer&gt;map = </rich_text>
-      <rich_text foreground="#cc7832">new </rich_text>
-      <rich_text>HashMap&lt;&gt;()</rich_text>
-      <rich_text foreground="#cc7832">;</rich_text>
-      <rich_text>
+HashMap&lt;String, Integer&gt;map = new HashMap&lt;&gt;();
 
-TreeMap&lt;String, Integer&gt; treeMap = </rich_text>
-      <rich_text foreground="#cc7832">new </rich_text>
-      <rich_text>TreeMap&lt;&gt;()</rich_text>
-      <rich_text foreground="#cc7832">;</rich_text>
-      <rich_text>
+TreeMap&lt;String, Integer&gt; treeMap = new TreeMap&lt;&gt;();
 
-TreeSet&lt;Integer&gt; ts = </rich_text>
-      <rich_text foreground="#cc7832">new </rich_text>
-      <rich_text>TreeSet&lt;&gt;()</rich_text>
-      <rich_text foreground="#cc7832">;</rich_text>
-      <rich_text>
+TreeSet&lt;Integer&gt; ts = new TreeSet&lt;&gt;();
 
-HashSet&lt;Integer&gt; set = </rich_text>
-      <rich_text foreground="#cc7832">new </rich_text>
-      <rich_text>HashSet&lt;&gt;()</rich_text>
-      <rich_text foreground="#cc7832">;</rich_text>
-      <rich_text>
+HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
 
 List&lt;Integer&gt; list = new ArrayList&lt;&gt;();
 
 
-</rich_text>
-      <rich_text scale="h2">Iterating hashmap:</rich_text>
-      <rich_text>
+// Iterating hashmap:
 for(Map.Entry&lt;String, Integer&gt; m: map.entrySet()){
 
 }
 
-</rich_text>
-      <rich_text scale="h2">Custom Sorting</rich_text>
-      <rich_text>:
-Queue&lt;Integer&gt; heap = new PriorityQueue&lt;&gt;(
-            (n1, n2) -&gt; count.get(n1) - count.get(n2));
+// Custom Sorting:
+Queue&lt;Integer&gt; heap = new PriorityQueue&lt;&gt;((n1, n2) -&gt; count.get(n1) - count.get(n2));
 
-Collections.sort(list,  Comparator.comparing(e-&gt;e.properties));</rich_text>
+Collections.sort(list,  Comparator.comparing(e-&gt;e.properties));
+
+
+
+// String Function 
+String str = new String("");
+
+// iterating string
+for(char c: n.toCharArray())
+
+str.charAt(i);
+</rich_text>
     </node>
   </node>
   <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1609915204">
@@ -1582,7 +1574,7 @@ console.log(name);</codebox>
 - start.spring.io
 - </rich_text>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1608988244">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1612373132">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -2785,6 +2777,53 @@ Volume:
     <node name="Databse Scaling" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608988244" ts_lastsave="1608988245">
       <rich_text link="webs https://www.freecodecamp.org/news/understanding-database-scaling-patterns/amp/">https://www.freecodecamp.org/news/understanding-database-scaling-patterns/amp/</rich_text>
     </node>
+    <node name="Design Patterns" unique_id="60" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373132" ts_lastsave="1612373147">
+      <node name="Data Management" unique_id="61" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373147" ts_lastsave="1612382191">
+        <rich_text>Data Management
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <table char_offset="17" justification="left" col_min="800" col_max="800" col_widths="150,830">
+          <row>
+            <cell>Cache-Aside</cell>
+            <cell>Load data on demand into a cache from a data store</cell>
+          </row>
+          <row>
+            <cell>CQRS</cell>
+            <cell>Segregate operations that read data from operations that update data by using separate interfaces.</cell>
+          </row>
+          <row>
+            <cell>Event Sourcing</cell>
+            <cell>Use an append-only store to record the full series of events that describe actions taken on data in a domain.</cell>
+          </row>
+          <row>
+            <cell>Index Table</cell>
+            <cell>Create indexes over the fields in data stores that are frequently referenced by queries.</cell>
+          </row>
+          <row>
+            <cell>Materialized View</cell>
+            <cell>Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.</cell>
+          </row>
+          <row>
+            <cell>Sharding</cell>
+            <cell>Divide a data store into a set of horizontal partitions or shards.</cell>
+          </row>
+          <row>
+            <cell>Static Content</cell>
+            <cell>Hosting	Deploy static content to a cloud-based storage service that can deliver them directly to the client.</cell>
+          </row>
+          <row>
+            <cell>Valet Key</cell>
+            <cell>Use a token or key that provides clients with restricted direct access to a specific resource or service.</cell>
+          </row>
+          <row>
+            <cell>Pattern</cell>
+            <cell>Summary</cell>
+          </row>
+        </table>
+        <node name="Cache-Aside" unique_id="62" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373156" ts_lastsave="1612373156"/>
+      </node>
+    </node>
   </node>
   <node name="Product Design" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608296343" ts_lastsave="1608304521">
     <rich_text>
@@ -3573,7 +3612,7 @@ disagree and commit
       </node>
     </node>
   </node>
-  <node name="API Design" unique_id="45" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611955341" ts_lastsave="1611961520">
+  <node name="API Design" unique_id="45" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611955341" ts_lastsave="1612371360">
     <rich_text>Cart
 Question: Is this supposed to be a backend design or frontend design or both? 
 Status code ?
@@ -3621,6 +3660,148 @@ updateApi()
 10. Authorization
 11. Documentation
 </rich_text>
+    </node>
+  </node>
+  <node name="Zalando" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371360" ts_lastsave="1612371369">
+    <node name="Job Description" unique_id="58" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371369" ts_lastsave="1612371535">
+      <rich_text>
+</rich_text>
+      <rich_text scale="h1">Java/Kotlin Backend Engineer - Retail Operations - In Season Management (w/m/d)</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h2">Zalando SE</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text link="webs http://mailto:?Subject=Zalando%20jobs&amp;body=https://jobs.zalando.com/en/jobs/2241035-java-kotlin-backend-engineer-retail-operations-in-season-management-w-m-d/">Send email</rich_text>
+      <rich_text>
+Copied
+
+
+</rich_text>
+      <rich_text link="webs https://jobs.zalando.com/en/jobs/2241035-java-kotlin-backend-engineer-retail-operations-in-season-management-w-m-d/?gh_src=22377bdd1us#apply">APPLY</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text weight="heavy">For more information about Retail Operations Business Unit Please visit </rich_text>
+      <rich_text link="webs https://sites.google.com/zalando.de/zalando-retail-operations/home?authuser=0" weight="heavy">THIS</rich_text>
+      <rich_text weight="heavy"> page.</rich_text>
+      <rich_text>
+As a Backend Engineer in the Retail Operations’ Competence Center In-Season Management, you will join the engineering team in their mission to build Zalando’s next inventory replenishment platform, which will lift the replenishment process to a new level. This new platform will become a major instrument for hundreds of internal and thousands of external users.
+Our cross-functional engineering team is mixed between full-stack and backend engineers. This is a very exciting time for us as we are currently laying the foundation of the new system, working closely together with business analysts for optimal data-driven decisions and our product managers who ensure all requirements are user-focused through strong collaboration with our customers. 
+ 
+</rich_text>
+      <rich_text weight="heavy">WHERE YOUR EXPERTISE IS NEEDED</rich_text>
+      <rich_text>
+• Design, develop and deploy microservices for our Kubernetes production environment, in collaboration with data engineers, frontend engineers, and direct interaction with users.
+• Design and development of APIs and event-driven connections between services.
+• Own the development cycle - from software design, implementation, and testing to deployment and maintenance of the products.
+• Join a team where Continuous Integration, Code Quality, Code Reviews, Test Coverage, etc. are kept at very high standards.
+• Share your knowledge by contributing to our growing frontend community and becoming part of our internal guilds.
+
+ 
+</rich_text>
+      <rich_text weight="heavy">WHAT WE’RE LOOKING FOR</rich_text>
+      <rich_text>
+◇ 5+ experience in building server applications with Java/Kotlin. Experience with Maven/Gradle, and modern frameworks like SpringBoot in an agile and commercial setting
+◇ Experience in at least one more language in production services (e.g. Python, JavaScript)
+◇ Ability to write well formatted, structured and clean code that interacts with databases and UI clients
+◇ Experience with CI/CD pipelines, Docker/Kubernetes, or AWS deployment is a plus
+
+ 
+</rich_text>
+      <rich_text weight="heavy">WHAT WE OFFER</rich_text>
+      <rich_text>
+◇ Culture of trust, empowerment and constructive feedback, </rich_text>
+      <rich_text link="webs https://opensource.zalando.com/">open source</rich_text>
+      <rich_text> commitment, meetups, game nights, 70+ internal technical and fun guilds, knowledge sharing through tech talks, internal tech academy and </rich_text>
+      <rich_text link="webs https://jobs.zalando.com/tech/blog/">blogs</rich_text>
+      <rich_text>, product demos, parties &amp; events
+◇ Competitive salary, employee share shop, pension scheme, 40% Zalando shopping discount on most products from the Zalando shop, discounts from external partners, </rich_text>
+      <rich_text link="webs https://all-about-z.com/home-is-where-the-campus-is/">centrally located offices</rich_text>
+      <rich_text> , public transport discounts, municipality services, great IT equipment, flexible working times, additional holidays and volunteering time off, free beverages and fruits, diverse sports and health offerings
+◇ Extensive onboarding, mentoring and personal development opportunities and an international team of experts
+◇ Relocation assistance for internationals, PME family service and parent &amp; child rooms* (*available only in select locations)
+
+ 
+</rich_text>
+      <rich_text style="italic">We celebrate diversity and are committed to building teams that represent a variety of backgrounds, perspectives and skills. All employment is decided on the basis of qualifications, merit and business need.</rich_text>
+      <rich_text>
+ 
+</rich_text>
+      <rich_text weight="heavy">ABOUT ZALANDO</rich_text>
+      <rich_text>
+Zalando is Europe’s leading online platform for fashion, connecting customers, brands and partners across 17 markets. We drive digital solutions for fashion, logistics, advertising and research, bringing head-to-toe fashion to more than 32 million active customers through diverse skill-sets, interests and </rich_text>
+      <rich_text link="webs https://opensource.zalando.com/tech-radar/">languages</rich_text>
+      <rich_text> our teams choose to use.
+ 
+At Retail Operations, we provide the technological backbone that drives our core retail business on the supplier-facing side. We build state-of-the art B2B &amp; enterprise systems that connect Zalando seamlessly with our suppliers - from onboarding product catalogues to creating the best online multimedia content, and from aligning purchase quantities to scheduling deliveries into our warehouses. To our 2000+ suppliers, we offer easy ways to integrate and collaborate with Zalando - through our supplier portal, standard EDI and web-based REST APIs. To our 1000+ internal users we offer highly automated processes that allow them to focus on everything machines cannot do on their own. To do this, we build state-of-the systems using a variety of technologies, such as HTML/JS, Java, Scala, Kotlin and Python - all as cloud-based microservices.
+
+
+
+</rich_text>
+      <node name="To Learn" unique_id="59" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371535" ts_lastsave="1612378456">
+        <rich_text weight="heavy">To Learn:</rich_text>
+        <rich_text>
+☐ Java
+   ☐ Generics
+☐ Kotlin
+   ☐ Basic concepts
+☐ Python
+   ☐ Basic concepts
+☐ </rich_text>
+        <rich_text link="node 27">JavaScript</rich_text>
+        <rich_text>
+   ☐ Missing concepts
+
+☐ Maven
+   ☐ ???
+☐ Gradle
+   ☐ ???
+
+☐ SpringBoot
+   ☐ A lot of them
+
+☐ Well formatted code
+   ☐ What is well formatted code? read some guidelines
+☐ Structered code
+   ☐ What is well structered code, may be design patterns. 
+☐ Clean code
+   ☐ What is clean code ? 
+☐ Code Quality
+   ☐ What is code quality
+☐ Code Reviews
+   ☐ There's a site regarding code reviews
+☐ Test Coverage
+   ☐ JUnit
+      ☐ In depth
+
+☐ MySQL
+   ☐ Complete 147 Question
+☐ Postgres
+   ☐ Basic difference between MySQL and Postgres
+
+☐ CI/CD pipeline
+   ☐ Jenkins
+      ☐ Deploy Jenkins somewhere
+   ☐ CircleCI
+      ☐ Deploy CircleCI somewhere
+
+☐ Docker 
+   ☐ Create notes and check it often
+
+☐ Kubernetes
+   ☐ Some videos. 
+   ☐ Create autoscaling
+   ☐ Manage stateful pods
+
+☐ AWS deployment
+   ☐ Auto scaling
+   ☐ Docker / another type of container
+☐ Event Driven Interaction
+   ☐ ????</rich_text>
+      </node>
     </node>
   </node>
 </cherrytree>
