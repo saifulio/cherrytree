@@ -1574,7 +1574,7 @@ console.log(name);</codebox>
 - start.spring.io
 - </rich_text>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607730393" ts_lastsave="1612373132">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607730393" ts_lastsave="1612390617">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -1911,7 +1911,7 @@ Scalability ─┤         ├─ Partitioning
 2. Constraints
 3. </rich_text>
     </node>
-    <node name="Interview Links" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607979839" ts_lastsave="1608973578">
+    <node name="Interview Links" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607979839" ts_lastsave="1612413832">
       <rich_text scale="h2">Interviews</rich_text>
       <rich_text>
 1. </rich_text>
@@ -1955,6 +1955,9 @@ Scalability ─┤         ├─ Partitioning
       <rich_text>
 14. </rich_text>
       <rich_text link="webs https://www.youtube.com/watch?v=shp63TTI1ok">Web crawler for indexing pages</rich_text>
+      <rich_text>
+15. </rich_text>
+      <rich_text link="webs https://www.youtube.com/watch?v=1VVptdoKIwU">Design Kafka </rich_text>
       <rich_text>
 
 
@@ -3183,7 +3186,7 @@ public class Codec {
 // TreeNode ans = deser.deserialize(ser.serialize(root));</rich_text>
     </node>
   </node>
-  <node name="DevOps" unique_id="39" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609866683" ts_lastsave="1611943656">
+  <node name="DevOps" unique_id="39" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1609866683" ts_lastsave="1612390630">
     <rich_text>• BareIron in your own datacenter
 • cloud Infrastructure as a service like aws
 • Platform as a service
@@ -3348,7 +3351,7 @@ AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Default region name [None]: us-west-2
 Default output format [None]: ENTER</codebox>
     </node>
-    <node name="Kubernetes" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611943656" ts_lastsave="1611948138">
+    <node name="Kubernetes" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611943656" ts_lastsave="1612390761">
       <rich_text>• High Availability
 • Scalability
 • Disaster recovery
@@ -3421,7 +3424,26 @@ Default output format [None]: ENTER</codebox>
          - What resources are available?
          - Did the cluster state change ?
       ▪ cluster brain
-      ▪ cluster chagnes get stored in the key value store</rich_text>
+      ▪ cluster chagnes get stored in the key value store
+
+
+
+• miniKube
+   ◇ creates Virtual Box on your laptop
+   ◇ Node runs in that Virtual Box
+   ◇ 1 Node k8s cluster
+   ◇ for testing purposes
+
+• kubctl
+   ◇ Command line tool for k8s cluster
+   ◇ talk to Api Server
+
+
+• kubectl commands
+   ◇ kubectl get nodes
+   ◇ kubectl get pod
+   ◇ kubectl get services
+   ◇ kubectl create -h</rich_text>
     </node>
   </node>
   <node name="Behavioral Questions" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1610631091" ts_lastsave="1612021289">
@@ -3662,7 +3684,7 @@ updateApi()
 </rich_text>
     </node>
   </node>
-  <node name="Zalando" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371360" ts_lastsave="1612371369">
+  <node name="Zalando" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1612371360" ts_lastsave="1612389288">
     <node name="Job Description" unique_id="58" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371369" ts_lastsave="1612371535">
       <rich_text>
 </rich_text>
@@ -3741,11 +3763,12 @@ At Retail Operations, we provide the technological backbone that drives our core
 
 
 </rich_text>
-      <node name="To Learn" unique_id="59" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371535" ts_lastsave="1612378456">
+      <node name="To Learn" unique_id="59" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371535" ts_lastsave="1612389403">
         <rich_text weight="heavy">To Learn:</rich_text>
         <rich_text>
 ☐ Java
    ☐ Generics
+   ☐ Streaming api
 ☐ Kotlin
    ☐ Basic concepts
 ☐ Python
@@ -3754,6 +3777,7 @@ At Retail Operations, we provide the technological backbone that drives our core
         <rich_text link="node 27">JavaScript</rich_text>
         <rich_text>
    ☐ Missing concepts
+☐ Golang
 
 ☐ Maven
    ☐ ???
