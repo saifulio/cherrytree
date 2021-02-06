@@ -2781,7 +2781,7 @@ Volume:
       <rich_text link="webs https://www.freecodecamp.org/news/understanding-database-scaling-patterns/amp/">https://www.freecodecamp.org/news/understanding-database-scaling-patterns/amp/</rich_text>
     </node>
     <node name="Design Patterns" unique_id="60" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373132" ts_lastsave="1612373147">
-      <node name="Data Management" unique_id="61" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373147" ts_lastsave="1612382191">
+      <node name="Data Management" unique_id="61" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373147" ts_lastsave="1612434893">
         <rich_text>Data Management
 
 </rich_text>
@@ -2824,7 +2824,57 @@ Volume:
             <cell>Summary</cell>
           </row>
         </table>
-        <node name="Cache-Aside" unique_id="62" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373156" ts_lastsave="1612373156"/>
+        <node name="Cache-Aside" unique_id="62" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612373156" ts_lastsave="1612434915">
+          <rich_text>Load data on demand into a cache from a data store</rich_text>
+        </node>
+        <node name="Event Sourcing" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612433275" ts_lastsave="1612433851">
+          <rich_text scale="h1">Event Sourcing:</rich_text>
+          <rich_text>
+• </rich_text>
+          <rich_text weight="heavy">What it is:</rich_text>
+          <rich_text> Every change to the state of an application is captured in an event object and these event objects are themselves stored in the sequence they were applied. Message Queue is for passing the events, but you need a event store to store these events.
+• </rich_text>
+          <rich_text weight="heavy">When needed:</rich_text>
+          <rich_text> To avoid conflict or concurrency while updating db</rich_text>
+        </node>
+        <node name="CQRS" unique_id="64" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612433644" ts_lastsave="1612433646">
+          <rich_text>CQRS: 
+Command and Query Responsibility Segregation
+Write query
+Read query</rich_text>
+        </node>
+        <node name="Index Table" unique_id="65" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612433950" ts_lastsave="1612434029">
+          <rich_text scale="h1">Index Table:</rich_text>
+          <rich_text>
+Why: 
+• To increase query performance
+When:
+• When the data is frequently accessed by this field in queries.</rich_text>
+        </node>
+        <node name="Sharding" unique_id="66" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612434091" ts_lastsave="1612434209">
+          <rich_text>Sharding:
+When:
+• Horizontal partitions.
+• Scaling
+• Increase the performance of a data store.
+• To reduce the latency of the users based on location
+• To manage the performance of a server when network bandwidth is limited.</rich_text>
+        </node>
+        <node name="Materialized View" unique_id="67" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612434701" ts_lastsave="1612434749">
+          <rich_text scale="h1">Materialized View</rich_text>
+          <rich_text>
+
+When:
+• To improve efficient querying
+• Improve application performance
+• Data extraction
+• When data is not properly formatted for required query operations.
+
+</rich_text>
+        </node>
+        <node name="Static Content Hosting" unique_id="68" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612434893" ts_lastsave="1612434897">
+          <rich_text>CDN</rich_text>
+        </node>
       </node>
     </node>
   </node>
@@ -3669,18 +3719,23 @@ List&lt;products&gt; details()
 int cartAmount()
 updateApi()
 }</rich_text>
-    <node name="API design best practices" unique_id="46" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611961520" ts_lastsave="1611962660">
+    <node name="API design best practices" unique_id="46" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1611961520" ts_lastsave="1612608034">
       <rich_text>1. Don't expose your database schema in the response of your api endpoint
 2. Don't expose the id's of your records if you can help it. (security issue) so that someone who is using can't alter the id
 3. Try and use https whereever you can (token, bearer token, passwords)
 4. ?? Explaining other api endpoints in the response, so that customer can use other related apis
 5. API versioning: 
 6. HTTP status code
-7. Rate limits
-8. Throtlling
-9. Authentication
-10. Authorization
-11. Documentation
+   1) 200 (OK)
+   2) 201 (Created) When a Post request is successfully creates the request
+   3) 404 (Not Found)
+   4) 406 (Not Acceptable) when in the request, Accept type like “application/json” is not acceptable
+   5) 415 (Unsupported Media Type) When in the request, Content-type like “application/json” is not acceptable for the server
+8. Rate limits
+9. Throtlling
+10. Authentication
+11. Authorization
+12. Documentation
 </rich_text>
     </node>
   </node>
