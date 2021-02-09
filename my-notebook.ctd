@@ -3801,7 +3801,7 @@ updateApi()
 </rich_text>
     </node>
   </node>
-  <node name="Zalando" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1612371360" ts_lastsave="1612389288">
+  <node name="Zalando" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1612371360" ts_lastsave="1612896355">
     <rich_text>
 </rich_text>
     <node name="Job Description" unique_id="58" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612371369" ts_lastsave="1612371535">
@@ -3945,6 +3945,161 @@ At Retail Operations, we provide the technological backbone that drives our core
 ☐ Event Driven Interaction
    ☐ ????</rich_text>
       </node>
+    </node>
+  </node>
+  <node name="Setup" unique_id="71" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612896355" ts_lastsave="1612908336">
+    <node name="php mysql ubuntu multipass" unique_id="72" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612896396" ts_lastsave="1612902430">
+      <rich_text>
+
+
+
+
+</rich_text>
+      <rich_text link="webs https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04">https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h2">Installing apache2</rich_text>
+      <rich_text>
+
+
+</rich_text>
+      <rich_text justification="left" foreground="#e0276a">sudo</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> ufw status</rich_text>
+      <rich_text>
+
+Status: inactive
+
+if inactive then 
+</rich_text>
+      <rich_text family="monospace">sudo ufw enable</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text justification="left" foreground="#e0276a">sudo</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> ufw status</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text family="monospace">Output
+Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere                                
+</rich_text>
+      <rich_text family="monospace" background="#f2c94c">Apache                     ALLOW       Anywhere</rich_text>
+      <rich_text family="monospace">                  
+OpenSSH (v6)               ALLOW       Anywhere (v6)                    
+</rich_text>
+      <rich_text family="monospace" background="#f2c94c">Apache (v6)                ALLOW       Anywhere (v6)</rich_text>
+      <rich_text family="monospace">  </rich_text>
+      <rich_text>
+
+
+To see the server ip in multipass 
+multipass list
+</rich_text>
+      <rich_text link="webs http://server_ip">http://server_ip</rich_text>
+      <rich_text>
+
+
+</rich_text>
+      <rich_text scale="h2">Installing MySQL</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text justification="left" foreground="#e0276a">sudo</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> </rich_text>
+      <rich_text justification="left" foreground="#e0276a">apt</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> </rich_text>
+      <rich_text justification="left" foreground="#e0276a">install</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> mysql-server</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text justification="left" foreground="#e0276a">sudo</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> mysql_secure_installation</rich_text>
+      <rich_text>
+
+0 = Low
+1 = medium
+new password: tea864Aide211!
+
+</rich_text>
+      <rich_text scale="h2">Reset mysql root password if forgotten</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text link="webs https://devanswers.co/how-to-reset-mysql-root-password-ubuntu/">https://devanswers.co/how-to-reset-mysql-root-password-ubuntu/</rich_text>
+      <rich_text>
+
+
+</rich_text>
+      <rich_text scale="h2">Installing PHP</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text justification="left" foreground="#e0276a">sudo</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> </rich_text>
+      <rich_text justification="left" foreground="#e0276a">apt</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> </rich_text>
+      <rich_text justification="left" foreground="#e0276a">install</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454"> php libapache2-mod-php php-mysql</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text justification="left" scale="h3" background="#f2f2f2" foreground="#545454">php -v</rich_text>
+      <rich_text>
+
+
+
+</rich_text>
+      <rich_text link="webs https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04">https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text scale="h2">Installing phpMyAdmin</rich_text>
+      <rich_text>
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+
+</rich_text>
+      <rich_text scale="h3">To fix not found error</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text link="webs https://askubuntu.com/questions/387062/how-to-solve-the-phpmyadmin-not-found-issue-after-upgrading-php-and-apache">https://askubuntu.com/questions/387062/how-to-solve-the-phpmyadmin-not-found-issue-after-upgrading-php-and-apache</rich_text>
+      <rich_text>
+
+saif
+tea864Aide211@
+
+
+
+Change document root
+sudo cd /etc/apache2/sites-available
+sudo vi 000-default.conf
+
+
+</rich_text>
+      <codebox char_offset="2" justification="left" frame_width="500" frame_height="30" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">sudo apt update
+sudo apt upgrade</codebox>
+      <codebox char_offset="140" justification="left" frame_width="500" frame_height="30" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">sudo apt update
+sudo apt install apache2
+sudo ufw app list
+sudo ufw allow in "Apache"</codebox>
+    </node>
+    <node name="Multipass" unique_id="73" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612896712" ts_lastsave="1612897442">
+      <node name="Launch" unique_id="74" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612896725" ts_lastsave="1612900930">
+        <rich_text>Launch an ubuntu 20.10 image named main with 4GB ram, cpu 1, and disk size 10GB
+
+
+
+</rich_text>
+        <codebox char_offset="81" justification="left" frame_width="500" frame_height="30" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">multipass launch --name primary -m=4G -c=1 -d=10G 20.10</codebox>
+      </node>
+      <node name="server ip" unique_id="75" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612897442" ts_lastsave="1612897449">
+        <rich_text>Run multipass image
+
+</rich_text>
+        <codebox char_offset="21" justification="left" frame_width="500" frame_height="30" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">multipass list</codebox>
+      </node>
+    </node>
+    <node name="composer windows" unique_id="76" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612908336" ts_lastsave="1612908349">
+      <rich_text link="webs https://getcomposer.org/Composer-Setup.exe">https://getcomposer.org/Composer-Setup.exe</rich_text>
     </node>
   </node>
 </cherrytree>
