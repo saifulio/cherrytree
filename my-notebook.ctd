@@ -35,7 +35,7 @@ exports.down = function (knex) {
 </codebox>
     </node>
   </node>
-  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1612175338">
+  <node name="Java" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607315448" ts_lastsave="1612994660">
     <rich_text scale="h3">Things to consider before submit:</rich_text>
     <rich_text>
 - Empty Array
@@ -406,6 +406,17 @@ for(char c: n.toCharArray())
 
 str.charAt(i);
 </rich_text>
+    </node>
+  </node>
+  <node name="Leetcode" unique_id="85" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612994660" ts_lastsave="1612994696">
+    <node name="Binary Search" unique_id="86" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612994696" ts_lastsave="1612994741">
+      <rich_text link="webs https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/solution/">https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/solution/</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h3">Todo:</rich_text>
+      <rich_text>
+☐ Binary Search with while loop</rich_text>
     </node>
   </node>
   <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1609915204">
@@ -1580,7 +1591,7 @@ console.log(name);</codebox>
 - start.spring.io
 - </rich_text>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607730393" ts_lastsave="1612663820">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607730393" ts_lastsave="1612995741">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -2910,6 +2921,11 @@ When:
         </node>
       </node>
     </node>
+    <node name="Load Balancer" unique_id="87" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612995741" ts_lastsave="1612995775">
+      <rich_text>Layer - 3 based means: IP based load balancer
+Layer - 4 baseed means: DNS level load balancer
+Layer - 7 based means: Application layer load balancer</rich_text>
+    </node>
   </node>
   <node name="Product Design" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608296343" ts_lastsave="1608304521">
     <rich_text>
@@ -3951,7 +3967,9 @@ At Retail Operations, we provide the technological backbone that drives our core
     <node name="php mysql ubuntu multipass" unique_id="72" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612896396" ts_lastsave="1612902430">
       <rich_text>
 
-
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
 
 
 </rich_text>
@@ -3961,7 +3979,9 @@ At Retail Operations, we provide the technological backbone that drives our core
 </rich_text>
       <rich_text scale="h2">Installing apache2</rich_text>
       <rich_text>
-
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
 
 </rich_text>
       <rich_text justification="left" foreground="#e0276a">sudo</rich_text>
@@ -4086,7 +4106,9 @@ sudo ufw allow in "Apache"</codebox>
       <node name="Launch" unique_id="74" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612896725" ts_lastsave="1612900930">
         <rich_text>Launch an ubuntu 20.10 image named main with 4GB ram, cpu 1, and disk size 10GB
 
-
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
 
 </rich_text>
         <codebox char_offset="81" justification="left" frame_width="500" frame_height="30" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">multipass launch --name primary -m=4G -c=1 -d=10G 20.10</codebox>
@@ -4095,6 +4117,7 @@ sudo ufw allow in "Apache"</codebox>
         <rich_text>Run multipass image
 
 </rich_text>
+        <rich_text justification="left"></rich_text>
         <codebox char_offset="21" justification="left" frame_width="500" frame_height="30" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">multipass list</codebox>
       </node>
     </node>
@@ -4125,7 +4148,9 @@ app/Http/Controllers/HomeController</rich_text>
     <node name="Errors" unique_id="81" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612911097" ts_lastsave="1612911135">
       <rich_text>• Laravel Controller doesn't exist, even though it clearly exists
    ◇ If you're using Laravel 8, add this line to your RouteServiceProvider.php
-   ◇ 
+   ◇ </rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
 </rich_text>
       <codebox char_offset="150" justification="left" frame_width="500" frame_height="30" width_in_pixels="1" syntax_highlighting="php" highlight_brackets="1" show_line_numbers="0">protected $namespace = 'App\Http\Controllers';</codebox>
     </node>
