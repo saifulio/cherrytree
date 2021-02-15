@@ -1615,7 +1615,7 @@ console.log(name);</codebox>
 - start.spring.io
 - </rich_text>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607730393" ts_lastsave="1612663820">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607730393" ts_lastsave="1612995741">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -2944,6 +2944,11 @@ When:
           <rich_text>CDN</rich_text>
         </node>
       </node>
+    </node>
+    <node name="Load Balancer" unique_id="87" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1612995741" ts_lastsave="1612995775">
+      <rich_text>Layer - 3 based means: IP based load balancer
+Layer - 4 baseed means: DNS level load balancer
+Layer - 7 based means: Application layer load balancer</rich_text>
     </node>
   </node>
   <node name="Product Design" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608296343" ts_lastsave="1608304521">
