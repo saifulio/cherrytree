@@ -364,12 +364,13 @@ Refactor -&gt; Lombok -&gt; @ToString ( To add Annotations )
 Refactor -&gt; Delombok -&gt; @ToString (To generate code)</rich_text>
       </node>
     </node>
-    <node name="CheatSheet" unique_id="56" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#ff0000" ts_creation="1612166023" ts_lastsave="1613298110">
+    <node name="CheatSheet" unique_id="56" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#ff0000" ts_creation="1612166023" ts_lastsave="1613725113">
       <rich_text>// Declaring data structures:
 
 Arrays.toString(arr);
 Arrays.fill(arr, 322934); // to fill an array with 322934 for each elements
 
+Queue&lt;Integer&gt; que = new LinkedList&lt;&gt;();
 Deque&lt;Integer&gt; dq = new LinkedList&lt;&gt;();
 dq.peek();
 dq.poll();
@@ -387,6 +388,15 @@ pq.poll();
 HashMap&lt;String, Integer&gt;map = new HashMap&lt;&gt;();
 
 TreeMap&lt;String, Integer&gt; treeMap = new TreeMap&lt;&gt;();
+	lowerKey
+	floorKey
+	lowerEntry
+	higherKey
+	ceilingKey
+	higherEntry
+
+	firstKey
+	lastKey
 
 TreeSet&lt;Integer&gt; ts = new TreeSet&lt;&gt;();
 
@@ -414,10 +424,14 @@ String str = new String("");
 for(char c: n.toCharArray())
 
 str.charAt(i);
+
+
+Bit Manipulation
+Integer.bitCount(n);
 </rich_text>
     </node>
   </node>
-  <node name="LeetCode" unique_id="85" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613003191" ts_lastsave="1613245123">
+  <node name="LeetCode" unique_id="85" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613003191" ts_lastsave="1613611990">
     <rich_text scale="h1">Todo:</rich_text>
     <rich_text>
 
@@ -437,10 +451,28 @@ str.charAt(i);
     <rich_text>
 </rich_text>
     <rich_text link="webs https://leetcode.com/problems/max-stack/">max-stack</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text scale="h2">Submitted Yet need to check again:</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text link="webs https://leetcode.com/problems/minimum-score-triangulation-of-polygon">minimum-score-triangulation-of-polygon</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h2">Easy yet very hard to find the follow up</rich_text>
+    <rich_text>:
+</rich_text>
+    <rich_text link="webs https://leetcode.com/problems/single-number/">single-number</rich_text>
     <node name="BinarySerach" unique_id="86" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613003225" ts_lastsave="1613003274">
       <rich_text>Check how while loop is used to calculate binarySearch
 </rich_text>
       <rich_text link="webs https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/solution/">https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/solution/</rich_text>
+    </node>
+    <node name="Dynamic programming patterns" unique_id="88" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613518136" ts_lastsave="1613518137">
+      <rich_text link="webs https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns">https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns</rich_text>
     </node>
   </node>
   <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1609915204">
@@ -3057,7 +3089,7 @@ mapStateToProps
 mapDispatchToProps</rich_text>
     </node>
   </node>
-  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320894" ts_lastsave="1609866683">
+  <node name="Algorithm" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607320894" ts_lastsave="1613725090">
     <rich_text>
 </rich_text>
     <node name="Trie" unique_id="6" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1607320986" ts_lastsave="1607321759">
@@ -3316,6 +3348,16 @@ public class Codec {
 // Codec ser = new Codec();
 // Codec deser = new Codec();
 // TreeNode ans = deser.deserialize(ser.serialize(root));</rich_text>
+    </node>
+    <node name="Meet in the middle" unique_id="89" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613719799" ts_lastsave="1613719832">
+      <rich_text>Leetcode problem:
+</rich_text>
+      <rich_text link="webs https://leetcode.com/problems/closest-subsequence-sum/">closest-subsequence-sum</rich_text>
+      <rich_text>
+
+Explanation:
+</rich_text>
+      <rich_text link="webs https://leetcode.com/problems/closest-subsequence-sum/discuss/1053751/Java-Detailed-Explanation-%2B-comments-or-Meet-In-the-Middle-or-O-(n-*-2(n2)-or">https://leetcode.com/problems/closest-subsequence-sum/discuss/1053751/Java-Detailed-Explanation-%2B-comments-or-Meet-In-the-Middle-or-O-(n-*-2(n2)-or</rich_text>
     </node>
   </node>
   <node name="DevOps" unique_id="39" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1609866683" ts_lastsave="1612390630">
