@@ -364,11 +364,18 @@ Refactor -&gt; Lombok -&gt; @ToString ( To add Annotations )
 Refactor -&gt; Delombok -&gt; @ToString (To generate code)</rich_text>
       </node>
     </node>
-    <node name="CheatSheet" unique_id="56" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#ff0000" ts_creation="1612166023" ts_lastsave="1613725113">
+    <node name="CheatSheet" unique_id="56" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#ff0000" ts_creation="1612166023" ts_lastsave="1614625260">
       <rich_text>// Declaring data structures:
 
 Arrays.toString(arr);
 Arrays.fill(arr, 322934); // to fill an array with 322934 for each elements
+
+/* 
+* if found, then returns positive, 
+* if not, then -(higherIndex);
+*/
+Arrays.binarySearch(arr, start, end, n); 
+Arrays.binarySearch(arr, n); 
 
 Queue&lt;Integer&gt; que = new LinkedList&lt;&gt;();
 Deque&lt;Integer&gt; dq = new LinkedList&lt;&gt;();
@@ -380,6 +387,8 @@ dq.peekLast();
 dq.pollLast();
 dq.removeFirst();
 dq.removeLast();
+// This one is better to access, but for removing an item while iterating, linkedlist is better
+Deque&lt;Character&gt; stream = new ArrayDeque();
 
 PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;&gt;((a,b)-&gt;b-a);
 pq.peek();
@@ -416,9 +425,13 @@ Queue&lt;Integer&gt; heap = new PriorityQueue&lt;&gt;((n1, n2) -&gt; count.get(n
 Collections.sort(list,  Comparator.comparing(e-&gt;e.properties));
 
 
+// Character
+Character.isDigit(ch);
 
 // String Function 
 String str = new String("");
+str.split("\\.");
+
 
 // iterating string
 for(char c: n.toCharArray())
@@ -426,8 +439,19 @@ for(char c: n.toCharArray())
 str.charAt(i);
 
 
-Bit Manipulation
+// Bit Manipulation
 Integer.bitCount(n);
+
+// Trie implementation
+class TrieNode {
+    Map&lt;Character, TrieNode&gt; children = new HashMap();
+    boolean word = false;
+}
+//construct
+TrieNode trie = new TrieNode();
+// add
+node.children.put(ch, new TrieNode());
+node.word = true;
 </rich_text>
     </node>
   </node>
