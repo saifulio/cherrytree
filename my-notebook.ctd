@@ -499,7 +499,7 @@ node.word = true;
       <rich_text link="webs https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns">https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns</rich_text>
     </node>
   </node>
-  <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1609915204">
+  <node name="Product Design" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609913851" ts_lastsave="1615278459">
     <rich_text>• App </rich_text>
     <rich_text justification="left" scale="h3" foreground="#404040">critique google maps and yelp</rich_text>
     <rich_text> (5)
@@ -758,6 +758,11 @@ node.word = true;
     <rich_text justification="left" scale="h3" foreground="#404040">What other approaches did you try out in your projects?  </rich_text>
     <rich_text>
 </rich_text>
+    <node name="API design" unique_id="90" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1615278459" ts_lastsave="1615278460">
+      <rich_text>API design Best practices
+</rich_text>
+      <rich_text link="webs https://github.com/MicrosoftDocs/architecture-center/blob/master/docs/best-practices/api-design.md">https://github.com/MicrosoftDocs/architecture-center/blob/master/docs/best-practices/api-design.md</rich_text>
+    </node>
   </node>
   <node name="JavaScript" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1609346730" ts_lastsave="1610069481">
     <rich_text>
@@ -1671,7 +1676,7 @@ console.log(name);</codebox>
 - start.spring.io
 - </rich_text>
   </node>
-  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607730393" ts_lastsave="1612995741">
+  <node name="System Design" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#0000ff" ts_creation="1607730393" ts_lastsave="1615280778">
     <rich_text scale="h1" weight="heavy">Topics</rich_text>
     <rich_text>
 - </rich_text>
@@ -3005,6 +3010,28 @@ When:
       <rich_text>Layer - 3 based means: IP based load balancer
 Layer - 4 baseed means: DNS level load balancer
 Layer - 7 based means: Application layer load balancer</rich_text>
+    </node>
+    <node name="SLA, SLO &amp; SLI" unique_id="91" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1615280778" ts_lastsave="1615280806">
+      <rich_text link="webs https://enqueuezero.com/the-difference-between-sli-slo-and-sla.html">https://enqueuezero.com/the-difference-between-sli-slo-and-sla.html</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h2">The Difference between SLI, SLO, and SLA</rich_text>
+      <rich_text>
+
+The SLA, SLO, and SLI are related concepts though they're different concepts.
+
+• SLA or Service Level Agreement is a contract that the service provider promises customers on service availability, performance, etc.
+• SLO or Service Level Objective is a goal that service provider wants to reach.
+• SLI or Service Level Indicator is a measurement the service provider uses for the goal.
+
+So here is the relationship. The service provider needs to collect metrics based on SLI, define thresholds of metrics based on SLO, and monitor the thresholds of metrics so that it won't break SLA. In practical, the SLIs are the metrics in the monitoring system; the SLOs are alerting rules, and the SLAs are the numbers of the monitoring metrics applying to the SLOs.
+
+Usually the SLO and the SLA are similar while the SLO is tighter than the SLA. The SLOs are generally used for internal only, and the SLAs are for external. If a service availability violates the SLO, operations need to react quickly to avoid it breaking SLA, otherwise, the company might need to refund some money to customers.
+
+The SLA, SLO, and SLI are based on such assumption that is the service will not be available 100%. Instead, we guarantee that the system will be available greater than a certain number, for example, 99.5%.
+
+The GCP blog SLOs, SLIs, SLAs, oh my - CRE life lessons (opens new window)explains it a lot. There are also two books heavily rely on these concepts: Site Reliability Engineering (opens new window), and The Site Reliability Workbook (opens new window).</rich_text>
     </node>
   </node>
   <node name="Product Design" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1608296343" ts_lastsave="1608304521">
