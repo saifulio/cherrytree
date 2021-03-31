@@ -364,7 +364,7 @@ Refactor -&gt; Lombok -&gt; @ToString ( To add Annotations )
 Refactor -&gt; Delombok -&gt; @ToString (To generate code)</rich_text>
       </node>
     </node>
-    <node name="CheatSheet" unique_id="56" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#ff0000" ts_creation="1612166023" ts_lastsave="1614625260">
+    <node name="CheatSheet" unique_id="56" prog_lang="java" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="#ff0000" ts_creation="1612166023" ts_lastsave="1616296249">
       <rich_text>// Declaring data structures:
 
 Arrays.toString(arr);
@@ -395,6 +395,12 @@ pq.peek();
 pq.poll();
 
 HashMap&lt;String, Integer&gt;map = new HashMap&lt;&gt;();
+// putIfAbsent
+map.putIfAbsent(x, 1);
+// computeIfAbsent
+map.computeIfAbsent(x, v-&gt;new arrayList&lt;&gt;()).add(1);
+// Pair, This is not usable till 14.1 java version. not sure though
+private Map&lt;Pair&lt;Integer, Integer&gt;, Boolean&gt; cache = new HashMap&lt;&gt;(); 
 
 TreeMap&lt;String, Integer&gt; treeMap = new TreeMap&lt;&gt;();
 	lowerKey
@@ -412,6 +418,9 @@ TreeSet&lt;Integer&gt; ts = new TreeSet&lt;&gt;();
 HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
 
 List&lt;Integer&gt; list = new ArrayList&lt;&gt;();
+
+// Copying a list
+List&lt;Integer&gt; list = new ArrayList&lt;&gt;(oldList);
 
 
 // Iterating hashmap:
@@ -431,6 +440,9 @@ Character.isDigit(ch);
 // String Function 
 String str = new String("");
 str.split("\\.");
+// Character Array to String
+char[] chArr = new chArr[100];
+return new String(chArr);
 
 
 // iterating string
@@ -452,7 +464,166 @@ TrieNode trie = new TrieNode();
 // add
 node.children.put(ch, new TrieNode());
 node.word = true;
+
+
+// hashCode and equals method
+// https://stackoverflow.com/questions/53438370/comparing-objects-in-hashset/53438892#53438892
+public boolean equals(Object startObject) {
+    if (this == startObject) return true;
+    if (startObject == null || getClass() != obj.getClass()) return false;
+    Point p = (Point) obj;
+    return x == p.x &amp;&amp; y == p.y;
+}
+
+
+BitSet bitset = new BitSet(16);
+bitset.set(0); // setting 1 to 0 index
+bitset.set(1, false); // setting 0 to 1 index
+bitset.set(0,5); // sets 1 from 0 to 5
+bitset.set(0,5, false); // sets 0 from 0 to 5
+bitset.clear(); // clear all bits
+bitset.cardinality(); // returns count of set bits</rich_text>
+      <node name="Bit Shift" unique_id="92" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1616298395" ts_lastsave="1616298413">
+        <rich_text>
 </rich_text>
+        <rich_text scale="h1">Bit Shifting</rich_text>
+        <rich_text>
+
+
+</rich_text>
+        <rich_text scale="h3">A </rich_text>
+        <rich_text scale="h3" weight="heavy">bit shift</rich_text>
+        <rich_text scale="h3"> moves each digit in a number's binary representation left or right. There are three main types of shifts:</rich_text>
+        <rich_text>
+
+
+
+</rich_text>
+        <rich_text scale="h3">Left Shifts</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h3">When shifting left, the most-significant bit is lost, and a 00 bit is inserted on the other end.</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h3">The left shift operator is usually written as "&lt;&lt;".</rich_text>
+        <rich_text>
+
+
+
+
+</rich_text>
+        <rich_text family="monospace">0010 &lt;&lt; 1  →  0100
+0010 &lt;&lt; 2  →  1000</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">A single left shift multiplies a binary number by 2:</rich_text>
+        <rich_text>
+
+
+
+
+</rich_text>
+        <rich_text family="monospace">0010 &lt;&lt; 1  →  0100
+
+0010 is 2
+0100 is 4</rich_text>
+        <rich_text>
+
+
+
+
+</rich_text>
+        <rich_text scale="h3">Logical Right Shifts</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h3">When shifting right with a </rich_text>
+        <rich_text scale="h3" weight="heavy">logical right shift</rich_text>
+        <rich_text scale="h3">, the least-significant bit is lost and a 00 is inserted on the other end.</rich_text>
+        <rich_text>
+
+
+
+
+</rich_text>
+        <rich_text family="monospace">1011 &gt;&gt;&gt; 1  →  0101
+1011 &gt;&gt;&gt; 3  →  0001</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">For positive numbers, a single logical right shift divides a number by 2, throwing out any remainders.</rich_text>
+        <rich_text>
+
+
+
+
+</rich_text>
+        <rich_text family="monospace">0101 &gt;&gt;&gt; 1  →  0010
+
+0101 is 5
+0010 is 2</rich_text>
+        <rich_text>
+
+
+
+
+</rich_text>
+        <rich_text scale="h3">Arithmetic Right Shifts</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h3">When shifting right with an </rich_text>
+        <rich_text scale="h3" weight="heavy">arithmetic right shift</rich_text>
+        <rich_text scale="h3">, the least-significant bit is lost and the most-significant bit is </rich_text>
+        <rich_text style="italic" scale="h3">copied</rich_text>
+        <rich_text scale="h3">.</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h3">Languages handle arithmetic and logical right shifting in different ways. Java provides two right shift operators: &gt;&gt; does an </rich_text>
+        <rich_text style="italic" scale="h3">arithmetic</rich_text>
+        <rich_text scale="h3"> right shift and &gt;&gt;&gt; does a </rich_text>
+        <rich_text style="italic" scale="h3">logical</rich_text>
+        <rich_text scale="h3"> right shift.</rich_text>
+        <rich_text>
+
+
+
+
+  </rich_text>
+        <rich_text family="monospace">1011 &gt;&gt; 1  →  1101
+1011 &gt;&gt; 3  →  1111
+
+0011 &gt;&gt; 1  →  0001
+0011 &gt;&gt; 2  →  0000</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">The first two numbers had a 11 as the most significant bit, so more 11's were inserted during the shift. The last two numbers had a 00 as the most significant bit, so the shift inserted more 00's.</rich_text>
+        <rich_text>
+</rich_text>
+        <rich_text scale="h3">If a number is encoded using </rich_text>
+        <rich_text link="webs https://www.interviewcake.com/concept/binary-numbers#twos-complement" scale="h3">two's complement, </rich_text>
+        <rich_text scale="h3">then an arithmetic right shift preserves the number's sign, while a logical right shift makes the number positive.</rich_text>
+        <rich_text>
+
+
+
+
+  </rich_text>
+        <rich_text family="monospace">// Arithmetic shift
+1011 &gt;&gt; 1  →  1101
+    1011 is -5
+    1101 is -3
+
+// Logical shift
+1111 &gt;&gt;&gt; 1  →  0111
+    1111 is -1
+    0111 is  7</rich_text>
+        <rich_text>
+
+
+
+</rich_text>
+      </node>
     </node>
   </node>
   <node name="LeetCode" unique_id="85" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1613003191" ts_lastsave="1613611990">
